@@ -2,52 +2,31 @@ Tell me about yourself?
 What do you consider your biggest professional accomplishment to-date?
 What’s the last thing you did that “wasn’t your job”?
 Ok, Let's be honest. What bad habits of other people drive you crazy?
- 
 What team are you the biggest fan of?
- 
 What do you always think takes too long?
- 
 Where do you see yourself in 3 years?
- 
 What do you do when a project's requirements change at the last minute?
 
 #Python Interview Questions:
 #https://towardsdatascience.com/53-python-interview-questions-and-answers-91fa311eec3f
 
 What has been your biggest technical challenge to date?
-
 Can you break down an algorithm you used on a project?
-	Ask - write down or show example? Ask clarifying questions, ask parameters of algorithm or full algorithm? Think going into teacher mode. Slow down, find places to pause
-I implemented an algorithm on my COVID-19 forecasting project to compile a subset of similar states that have similar population densities to use as a training set for predictions for one specific state. First, a population density tolerance had to be specified (plus or minus a certain number of people), then a minimum recovery factor would need to be specified to eliminate states that have not seen recovery from the training set, a defined starting point of the outbreak measured in percent of the maximum number of outbreaks per state, and finally a value to separate the training and testing data. The similar population densities and minimum recovery factor worked by filtering out only the states that met the thresholds so that a suitable subset would be generated, and then the other two parameters were tweaked in order to surround the maximum curve of the normalized data to determine how the specific group of states socially distanced to reduce the number of new cases per day. This algorithm was able to provide results and predictions for numerous states currently at their peak of new outbreaks.
 What tools have you used?
-Process Improvement - Describe a project in which you improved something
-In my recent project on COVID-19 forecasting, I noticed that as I working on it and new data became available, I would have to consistently keep cleaning the data because there were occasional new missing values. This made updating the project very tedious and difficult to update. To fix this issue, I took initiative by streamlining the data pipeline, by adding a function that would fill in the missing data with the average of the data points directly before and after the missing data and replicate this value to override the missing values. The function could also detect if the missing data were at the end of the dataset (so there would be no data after to average with) and simply replicate the last known data point to the missing data. As a result, I was able to automate the null value replacement in the data cleaning process and quickly update and run the model without problems for all future data updates. 
-I also noticed that the model took a very long time to run and there was a lot of redundancy in the function, and was very difficult to follow. In order for the code to be presentable and easier for others to understand, I streamlined the data pipeline: re-evaluated the process by which the model ran. For example, initially I had numerous locations in the code where I re-imported the code, cleaned it, then realized I needed data that I had processed out of the dataframe, so I had to reimport it and clean it again in a slightly different way. Instead of having the model run this way, I fixed it so that the function to clean the data outputted two different dataframes so the process would only need to run once.
-When I was working as a Design Engineer at Denso, I was once tasked with finding a proper color film to use with a light to determine which film would give us lighting colors within our customer specifications. I was given a booklet with hundreds of pages of film colors and expected to take all day to keep measuring them until I found one that would give us lighting within our color specifications. After testing films, I noticed one color gave us specifications considerably to the left, and another color gave us specifications considerably to the left. I decided to measure both of these colors overlaid on one another simultaneously and noticed that the specs met our color tolerance. However, due to the double thickness of the film, this filtered out too much of the lighting intensity. I then ended up flipping through the booklet and finding the closest color I could find to the two colors overlaid on one another and tested that one, and we had met all requirements. I was able to jump right to the color that met our specifications in a fraction of the time through this approach.
-How have you solved problems in a project you've done? Why did you chose this project? Why did you choose this model?
+Describe a project in which you improved something
 
+How have you solved problems in a project you've done? Why did you chose this project? Why did you choose this model?
 How did you validate your data?
-	Describe COVID-19 Project with CHCOC
-With the COVID-19 pandemic in full swing, people of all races and ethnicities are catching the virus. However, although Hispanics represent 30% of Colorado's population, 60% of cases recorded are of hispanic people. Through this project, I worked with Halvatzis Consulting and the Colorado Hispanic Chamber of Commerce to investigate possible factors on why hispanic people are disproportionately affected by the virus. My role was to investigate education, environmental factors, and food deserts of largely hispanic areas in Colorado to see if there is any correlation between the factors. So far, I have found that, in terms of education, there is a significant number of people in Colorado not fluent in English, and graduation rates for hispanic people are generally lower in largely populated areas (which also happen to be where the most hispanic people live). As for food deserts, the top two census tracts with the highest number of people that live more than 20 miles away from a supermarket and have no access to a vehicle are both in Costilla county, which has a 60% hispanic population. In terms of environmental factors, I found data sources on air quality, water quality, and soil quality. The zip code 80216 has the highest air pollution in the county, and has 80% hispanic population, and also happens to be a food desert (urban area with more than 1 mile away from supermarkets/healthy food sources). I plan on doing a group project with members from my cohort on soil and water quality as the data sources are too large and complicated to tackle in the time frame of this project.
-Decribe data sources: US Census, Colorado Department of Education, US Department of Agriculture, Colorado department of Local Affairs
-	Describe COVID-19 Forecasting project
-I used a subset of states similar in population density to states currently at their peak of daily new cases of COVID-19 to get insight on the most effective means of social distancing, from workplaces, activity at parks, etc. and to forecast the future number of new cases based on sustained levels of public activity. Based on the state, the findings were different. For example, reducing public activity in parks seemed to be the most effective way to reduce covid infections.
-	Describe Electricity generation renewable project
-In this project, I used electricity generation data from countries all around the world from 1980 to 2017 to investigate if the proportion of electricity generated with renewable resources was significantly improving. My main focus was to see if the top most developed countries in the world showed a statistically significant change, as my goal was to see if the countries who had the resources to go renewable were doing so. I also chose countries of specific countries to get trends for specific regions and found that the changes throughout the years were not statistically significant enough to prove that the proportions have been increasing.
 If you could do one thing done differently on your project, what would it be?
 In my COVID-19 forecasting project, one thing I would have done differently would be to use results on a county by county basis as opposed to a state by state basis. This would have taken more time as it would turn a dataset of 50 states into over 3000 counties, but by using a state by state basis, I was forced to make the assumption that each state had the same distribution of population densities. Moreover, when I started the project only several states were currently at their peak of new cases, and now nearly half of the states are, so there is a much more limited selection of recovered states to choose from to make predictions for each state. By using a county by county basis instead of state by state, there would be a much greater selection available of recovered counties with similar population densities to draw more accurate insights from.
 Tell me about a challenge you faced during the course of a project, focus one technical challenge, one soft challenge - challenge primarily related to data, tech, etc
-Pauses, highlight/bold key words
 One challenge I faced during my COVID-19 project was strange results for some states when I ran my model on them. Sometimes I would not see any improvement in the number of new cases with very low social distancing, and sometimes the estimation for the state was a higher number of new cases with maximum social distancing, which doesn't make any sense. I solved this problem by paying close attention to the subset of the states chosen to draw insights for a state, normalizing the date so that the curves of each state were as closely aligned as possible, and then tweaking the training data so that it didn't capture decreasing trends in social distancing as people returned to public activity after the peak of new case in a certain state in the subset, but not so much that the factors that drove the peak down in the first place were excluded. In the end, I was able to get viable results for many of the states currently at their maximum number of new cases.
 How did you normalize the dates?
-Soft challenge:
 During my time at Galvanize, I was required to present my final capstone project in 4 minutes or less and make my project interpretable to the audience in that time frame. During the early stages of my project, my model was so complicated that it included a random forest that consisted of every single feature time lagged, comprising a dataset of 188 features. In this stage, my model was so uninterpretable that it took multiple sessions of explaining what I did, so there was no way I was going to be able to explain this to an audience in 4 minutes or less. After reducing the time lagged features to simplify so that only the target variable, which was the number of daily new cases, was time lagged, I reduced the number of features from 188 to 30 and was still getting viable results, and the model was much easier to explain. In the end, I was able to present and explain my project thoroughly while meeting the time requirement.
 
 Tell me about a time when you fixed or improved a process or procedure
-In my Galvanize Data Science Immersive program, I was working on a case study involving a ride share service and trying to get insights as to why certain customers were churning and to find the most important features. I noticed that there was a very heavy skew towards a 5 star rating, so instead of using the star rating as a feature, I suggested that our team separates this into 3 different categories: 5 star, less than 5 star, or unknown. Ultimately, my feature engineering was able to detect a better level of churn. In most of the algorithms that we implemented, a low (less than 5 star rating) rating was detected as one of the top most important features. Had we have left the numerical value, we probably would have missed this insight.
 
-Module 1: Programming, Databases and Big Data, Statistics
-Programming
+#Module 1: Programming, Databases and Big Data, Statistics
 
 Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?
     I used version control in data science projects using git. Github is very helpful in collaborating on code with a partner, also VS Code has a Liveshare feature that I find very helpful as well. In developing code with a group, everyone checks out their own branch and then we merge these branches into the master when the new features are working. Communication is also very helpful to avoid having to deal with merge conflicts.
@@ -236,73 +215,39 @@ CAD Designer - Embra
 4- Determination
 5 – Goal oriented
 Weaknesses
-1 – Takes me a while to get to know people I– I have had these issues for a while, and it makes me come across as quite shy. I’ve been trying to correct this by exposing myself to situations that make me uncomfortable, and by becoming more involved on campus with Engineers without Borders, Tau Beta Pi Honor Society, and the Aquanauts Scuba Club in order to enhance my social skills and improve my confidence in talking to people. As a result of my efforts, I have been elected an officer of the Aquanauts Club two years in a row which is clear evidence that my social skills have been developing.
-3 – Public Speaking. Speaking in front of groups has been difficult for me, and I tend to get nervous. I’ve been trying to correct this weakness by ensuring that I practice all speeches before performing them, and resisting the temptation to avoid public speaking opportunities in order to gain more practice. In addition, I volunteered for the vice president position at the Aquanauts scuba club at my school, in which I lead the group and speak at group meetings in order to gain more experience and confidence with public speaking.
 Give me an example of a time you took initiative, where you went above and beyond what was expected of you.
-During my senior design project, we were assigned to create a presentation to illustrate our concept to a critical design panel. No one on my team knew how to create a CAD animation for it, and decided to instead use a series of screenshots to show how our concept, the Zero Power Proportioner, functioned. I took it upon myself to learn how to create a CAD animation that would effectively display the processes by which the concept operated. I successfully learned how to do this and the result was a very impressive animation that was complimented by the team and even impressed our group advisor.
 Tell me about a timed when you had to manage several tasks at the same time that will convince me that you are capable of multitasking.
-Last year in preparing for Galvanize, I maintained a full time job while preparing for the Galvanize Data Science Immersive program, all the while while preparing to sell my house to make the move to Colorado. I was able to interview and get into the intensive Galvanize DSI program on my first interview attempt and received great feedback from my interviewer, performed well at my job, and sold my house in time. My experience at Galvanize consisted of numerous projects, assignments, lectures, and readings, which I was able to keep up with consistently. After Galvanize, I managed my time effectively to complete several projects, job search, network, and interview.
 Describe a situation where you’ve had a conflict with another individual, and how you dealt with it.  What was the outcome?
-I find that the best way to handle conflict is to remain calm and patient while walking through the process of causing the problem one step at a time instead of telling anyone they're wrong. For example, my experience in Galvanize involved several case studies, which were fast paced team projects that we only had one day to do. When our team's code wasn't working, sometimes things would get heated due to the stress of the time constraints. For example, when I was having problems uploading our project to GitHub when I was in charge of it. Instead of getting defensive, I asked for feedback from the team on how they would suggest doing it, and shared my screen to go over my thought process. Ultimately, we were able to move through the conflict and resolve the problem together without wasting time arguing.
-In my last job as an Electrical Distribution Systems Engineer, sometimes my manager would disagree with me and I would be sure to address this
-There was a time in which I received a graded homework assignment back from my Professor that was not graded correctly. He took points off because he did not see one of the problems in the assignment that I did do. I talked to him once, but he denied his mistake and said he graded a problem on the problem set that I did not have done. After checking this on my own, I saw that I did in fact, do both problems, the one that he claimed he did not grade and the one he said he graded instead. Before going up to talk to him for a second time, I ensured that I was correct by double checking the homework problems I did matched the problem set, and approached him asking if he could tell me specifically the 3 problems that he did grade, instead of claiming that he graded my homework wrong. Through this approach, he saw that he in fact made a mistake and gave me full credit for the homework assignment that I in fact did, in all it’s entirety.
 What’s the biggest mistake you ever made and how did you try to fix it?
-Last year, I was the treasurer of the MTU Aquanauts scuba club. During the beginning of the year, I was in an officer transition period in which I was being trained on how to be a treasurer. There were signs up on campus that all campus organizations had to engage in a re-registration process in order to claim campus activities funding, but I assumed that the President or Vice President would take care of it and tell me if I had to do anything. Eventually the re-registration deadline passed and it turned out that the president or the other officers did not re-register us, and it looked as though we were going to lose all of our funding for the year. I got into contact with the president about this ordeal, and we discussed our problem with the student activities staff. It turns out that this procedure was different than in past years, and this problem was common amongst other campus organizations and we were given an extension on the re-registration process. Although our group’s funding was highly jeopardized due to this miscommunication, it all worked out in the end, although it was a close call. In order to keep this from ever happening to our organization ever again, I created a officer transition checklist including re-registration procedures for the treasurer transition packet to keep this situation from ever occurring again. From then on, I made a point of keeping in very close communication with club officers.
 Do you like working in groups or alone? Tell Why?
-I prefer working on groups. When groups of people work together on a project, a variety of inputs can be taken into account and the end result of the project will be more well rounded in the end given the variety of viewpoints and backgrounds of the people who worked on it. For instance, a team can consist of one person who is an excellent writer and communicator, someone with a lot of engineering experience, and someone who is very creative. Someone could have the best idea in the world, but without the group possessing some sort of writing and communication abilities, it will never get anywhere if no one can sell the idea.
-Also, I feel in this role, working in groups could be especially helpful because, if I imagine correctly, the majority of people in the department have a more software oriented background. As autonomous technology develops, we could see ourselves interacting with more suspension or chassis oriented systems and people who are working on them. As someone with experience with these systems, I could be an asset to a group because I know how to communicate with these people, and as I gain more experience in the software and electrical side of things, I could help other members in the department do the same, advancing the success of our program.
 What 3 words best describe you? 
-Intelligent – I graduated from high school with a near perfect GPA while taking numerous honors and AP classes. My college GPA of 3.65 is an excellent indicator of my academic proficiency. 
-Motivated – When I aim to to ensure that I could finish high school early and start taking college achieve something, I will do it.  Evidence of my exceptional self motivation is the fact that I graduated early from high school. This involved a lot of close contact with my high school counselor and summer classes in order classes immediately after.
-Focused – When group meetings get off task or the central purpose of an assignment is neglected, I am someone who always keeps these things in mind and can easily bring this up to the group to bring everyone back on task.
 Tell me about a situation in which you have had to adjust to changes over which you had no control. How did you handle it?
-When I was working at Jet’s Pizza, one day I came into work and there was a brand new order-taking program on the computers. The other co-workers told me it would probably take me a month to learn it, but I had it down and mastered it by the end of the work day. By the end of the week, other co- workers were asking me for help on how to do specific things with it. In the end, although the change was intimidating and uncomfortable at first, I handled it very well by embracing the change and finding that in the end, the new system was much easier to use than the old one.
-When I was working at DENSO, the company mandated that we use a new system in our engineering change order release procedure – something I had to use on a day to day basis. This system was not at all user-friendly and presented all kinds of issues. I handled it by consulting the training guide repeatedly and consulting the company’s system representative for help on a regular basis. Within a month or two, the system became second nature to me. Before long, I was able to help other co-workers with issues they had with it.
 Tell me about a time when you had to adjust to a classmate's or colleague's working style in order to complete a project or achieve your objectives.
-For design reports, I have always been used to having the actual report on dropbox or another shared drive, and having team members open the report and conduct revisions as they please. This has always worked for me, and was my preferred method for the process by which reports were compiled and revised. I favored this method because it allowed each of the team members to easily cast their input into the final product. However, this process was not as well received in my senior design project team as it was in prior teams. After hearing out the other team members, this procedure allowed one team member to make contributions to the report that may be miscommunicated information that may be false, and made for a montage of many different writing styles in the final report  instead of written in one voice. I adjusted to their idea of highlighting the changes that each of us makes when revising the reports, and creating a revising schedule and log of changes that is accessible to all team members, not to mention a naming convention, to ascertain that team members do not overwrite each others revisions, and so that other members can approve the changes to the paper before they are added to the paper and not easily seen before the final paper is submitted. I was a bit skeptical about this change, but now I realized that it makes a lot more sense and results in a higher quality product at the end.
-At DENSO, I was transferred to a new program with a new manager and had to conform to his working style. Although I did not necessarily agree with all aspects of his working style, I adapted to it since a great deal of time was spent setting up the system folders and files in this manner and I respected that. I was able to get used to this change in a relatively short period of time.
-How was your transition from high school to college? Did you face any particular problems? How did you handle them?
-Tell me about yourself
-Community service as relevant to what company does
-EwB AutoCAD
-ANALYTICAL SKILLS / PROBLEM SOLVING
+
+#ANALYTICAL SKILLS / PROBLEM SOLVING
 Describe the project or situation that best demonstrates your analytical abilities. What was your role?
 Tell me about a situation where you had to solve a difficult problem. What did you do? What was your thought process? What was the outcome? What do you wish you had done differently?
 What steps do you follow to study a problem before making a decision? Why?
-COMMUNICATION
+#COMMUNICATION
 Have you ever had to "sell" an idea to your classmates or co-workers? How did you do it? Did they accept your idea?
-Galvanize - Renewable resources project - sell idea to instructors
-CAD - idea to get work done before deadline - at end of year when most people were on vacation, not possible to get CAD drawing corrected before end of year because the designer at supplier was already on vacation - sought out alternatives, got suppliers supervisors written permission to get administrator approval to temporarily transfer ownership of drawing to me so I could make the required changes while abiding by protocol. Ending result, I was able to correct the drawing and we were able to release the engineering change before the end of the year and meet deadlines instead of just accepting it was going to be late.
-Gary - Open items list - providing links, implemented cross functional references to DPA database issues to avoid time consuming navigation to the proper database assessments
-DENSO - revamping process for testing lighting color specs
-There was an idea I had in my senior design project to create a CAD animation in our final project presentation instead of simply putting a series of screenshots of our proportioner operation cycle. In order to sell this idea, I first announced to the team that I would learn how to do CAD animation. After putting together a rather crude animation in order to communicate this idea without wasting too much time in case it wasn’t liked by the team, the idea was well received by the group and even our team advisor was impressed by the ending product, so yes, my idea was accepted.
 Give me an example of a time when you were able to successfully communicate with another person even when that individual may not have personally liked you (or vice versa). How did you handle the situation? What obstacles or difficulties did you face? How did you deal with them?
 What, in your opinion, are the key ingredients in guiding and maintinating successful relationships?
-Communication is the key ingredient in building and maintaining successful relationships. Being able to clearly communicate your ideas to others allows you to build and maintain a relationship with others, not to mention establish credibility with co-workers. In addition, it is also very important to remain respectful and an active listener to others, and to address the questions that they may have. Compromise is also important so that the action taken is the best possible result for all parties involved.
-How would you go about establishing your credibility quickly with the team?
 Communication is key. On one hand, it is very important to express ideas and opinions, as well as constructive criticism to the other team members, and effectively demonstrate your skills and abilities. However, it is also important to take the other team members ideas and opinions into account, and acknowledge their criticism without being defensive, while at the same time realizing that the co-workers are the key to advancing in an organization.
-CREATIVITY
+#CREATIVITY
 Tell me about a problem that you've solved in a unique or unusual way. What was the outcome? Were you happy or satisfied with it?
-SD animation
-DENSO: Using strategic plotting on excel for lighting measurements to get lighting measurements within spec – using two sheets at once and then looking at color of sheets, comparing, and finding the best solution
 Give me an example of when someone brought you a new idea that was odd or unusual. What did you do?
-Andrew S with idea for senior design – Mixrite 
-DECISION MAKING
+#DECISION MAKING
 Tell me about a time when you had to make a decision without all the information you needed. How did you handle it? Why? Were you happy with the outcome?
-One time I had to make a decision was choosing a college. I knew all the information accessible on the website and such, but I wasn’t able to know for sure if I would excel at this university or develop my skill sets effectively. I handled this decision by taking the time to research MTU and envisioning myself here, doing everything possible to convince myself that MTU would be the best fit for me. I was happy with the outcome.
 Give me an example of a time when you had to be quick in coming to a decision. What obstacles did you face? What did you do?
-When I was working at Jet’s Pizza, I was forced to make these kinds of decisions on the spot quite frequently when the store got very busy. Each of the employees has certain skill sets in terms of how new they are at working there, which should be taken into account. How I made decisions was with a priority system that I made up: Customers come first, meaning those waiting at the register to pick up their food come first, those who call on the phone are on par with them, then come the requests of the cooks in the kitchen, and the requests of the co-workers around me. Doing the dishes or cleaning up come absolutely last. This is because the customers are the most important part of a business, and dishes and garbage can wait.
 What is the most difficult decision you've had to make? How did you arrive at your decision? What was the result?
 One of the most difficult decisions I’ve had to make was choosing a major. I was torn between civil and mechanical engineering. I arrived at this decision by weighing the aspects of each major against each other. I ended up choosing mechanical because I like the variety of work I could do with a mechanical engineering degree, and a civil engineering degree seemed a bit more confined in terms of scope. 
-GOAL SETTING
+#GOAL SETTING
 Give me an example of an important goal which you have set and tell me how you reached it. What steps did you take? What obstacles did you encounter? How did you overcome the obstacles?
-FE Exam? Graduating early from HS?
 Tell me about a goal that you set that you did not reach. What steps did you take? What obstacles did you encounter? How did it make you feel?
 Failed Excel assessment for DaVita, used as learning experience
-A goal I had was to land a co-op or internship the past few years. I applied, interviewed with many different companies, but then would up with nothing so I had to rethink my strategy, I ended up spending more time applying for companies beforehand, but then after consistent failure I ended up consulting the career center for help and to point me in the right direction. I met with a career counselor and it turns out that most likely my career goals weren’t clear and wasn’t sure where I wanted to specialize in the area of mechanical engineering. Unfortunately by the time I realized this, I was going to be graduating soon.
 Where do you see yourself in 5 years?
-In five years, I want to know as many people at ___________ as possible, since co-workers are valuable resources which will help me know as many products at ____ as I can. In addition, I want to be leading a project at _______, and either pursuing or have already earned my masters degree and my PE Liscence. 
-INITIATIVE
+
+#INITIATIVE
 Describe a project or idea (not necessarily your own) that was implemented primarily because of your efforts. What was your role? What was the outcome?
 EDP Report Revising Procedures
 Describe a situation in which you recognized a potential problem as an opportunity. What did you do? What was the result? What do you wish you had done differently?
@@ -310,32 +255,32 @@ Every project I  do is opportunity to be creative in order to solve a problem
 Tell me about a project you initiated. What did you do? Why? What was the outcome? Were you happy with the result?
 Initiated idea for project in senior design
 What was the best idea you came up with during your professional or college career? How did you apply it?
-INTEGRITY/HONESTY
+
+#INTEGRITY/HONESTY
 Discuss a time when your integrity was challenged. How did you handle it?
 During a difficult lab report, I knew someone who knew someone who had done the lab last semester and could send me the completed lab report to make it easier for me. However, I knew this would not be right since it would most likely be copying and taking someone else’s work. Although this offer was tempting, it was not ethical so that was a deal breaker for me. I handled this situation by politely rejecting this offer and doing the lab on my own.
 During a class project that I worked on last year in designing trailer cabinets for motorsports enterprise teams, it was my role to discuss the conclusions and recommendations portion of our project for our final presentation. When critically examining any imperfections of our work, I resolved to state that in order to come up with an even better solution in the future for this project, as a team we would have spent more time face to face with enterprise team leaders in order to get more feedback in terms of what criteria they would like to see in their trailer cabinets, that way we could come up with a menu of solutions specialized to each specific team’s needs instead of relying solely on information they gave us through email. I had a teammate who objected to this, and told me to instead say that the project could have been improved if we were given a larger budget, that way it sounds like it’s the project stakeholders fault instead of ours that our project could have been better. I handled it by explaining that the budget had nothing to do with any imperfections in our project, and went with my original plan. The result was no negative feedback based on this answer and an excellent grade in the class regardless of the imperfection of the final result.
 Tell me about a time when you experienced a loss for doing what is right. How did you react?
-Dorm – broken glass on floor
-DENSO – Stayed till midnight to get a project done before deadline
  
-INTERPERSONAL SKILLS
+#INTERPERSONAL SKILLS
 Describe a situation where you found yourself dealing with someone who didn't like you. How did you handle it?
 Tell me about a time when you had to work on a team with someone you did not get along with. What happened?
 Stay respectful of the person and their viewpoints, don’t sink to their level. If they aren’t doing their fair share of the work, pull the person aside in private and see if there’s a reason why and if there’s anything that the team can do to motivate this member to put forth their best effort to contribute to the group. If after this step the team member still doesn’t contribute, I will closely monitor their progress and make suggestions for improving their work output. If all else fails, the work will still need to be done, and I will have to redistribute the work to the participating group members.
 In extreme cases, I would alert a higher authority such as our boss or our professor, but only as a very last resort.
 Describe a situation where you had a conflict with another individual, and how you dealt with it. What was the outcome? How did you feel about it?
 During my human powered vehicle project, I worked with a team member who was consistently brought the team off task and insulted everyone else’s ideas.  I handled it by resisting these insults and doing my best to keep the team on task, sometimes pulling this team member aside and making them aware of the damage they are causing to the team. The result was somewhat positive, as in I saw a change in this teammate’s performance
-LEADERSHIP
+#LEADERSHIP
 Tell me about a team project when you had to take the lead or take charge of the project? What did you do? How did you do it? What was the result?
 What is the toughest group that you have had to get cooperation from? What were the obstacles? How did you handle the situation? What were the reactions of the group members? What was the end result?
-PLANNING AND ORGANIZATION / TIME MANAGEMENT
+
+#PLANNING AND ORGANIZATION / TIME MANAGEMENT
 Describe a situation that required you to do a number of things at the same time. How did you handle it? What was the result?
 How do you prioritize projects and tasks when scheduling your time? Give me some examples.
-TEAMWORK
 Tell me about a time when you worked with a classmate or colleague who was not doing their share of the work. How did you handle it?
 Describe a situation in which you had to arrive at a compromise or help others to compromise. What was your role? What steps did you take? What was the result?
 Tell me about a time when you had to work on a team that did not get along. What happened? What role did you take? What was the result?
-PROBES / FOLLOW-UP QUESTIONS
+
+#PROBES / FOLLOW-UP QUESTIONS
 What steps did you take?
 What action did you take?
 What happened after that?
@@ -362,10 +307,6 @@ What obstacles did you face?
 What were you thinking at that point?
 Lead me through your decision process.
 How did you prepare for that?
-Why?
-How?
-When?
-Where?
 How would you describe yourself?
 What are your long range and short range goals and objectives?
 What do you see yourself doing five years from now? Ten years from now?
@@ -416,39 +357,3 @@ What major problem have you encountered and how did you deal with it?
 What have you learned from your mistakes?
 What have you accomplished that shows your initiative and willingness to work?
 What motivates you?
-I am motivated by a continuous drive to improve myself and take initiative to learn new things while making a difference in the world with my engineering skills, knowledge, and experience. ____ is an ideal company in order for me to pursue these goals. 
- 
- 
-Programming – Matlab programmer for college project, extrapolated programming code into calculator program during economic decision analysis, per professors advice in lecture, created programs in calculator to solve problems in 5 minutes for a 1 hour exam.
- 
-Questions for Virtual Test Platform Engineer:
--          Tell me about a typical day working in this role? Give example of a project that has been worked on or is the process of being worked on?
--          What do you enjoy most about working in this role in software verification?
--          Where could I find myself later in this position, say 5 years in the future?
--          Job position duties mentions that I will be working with engineers from different commodities to deploy the test platform. Can you mention which specific commodities I would be working with most?
--          What is the timeframe for making a decision, and when can I expect to hear back?
- 
-Programming skills:
--          Enjoyed Matlab programming in college, got exposure to Simulink during Controls engineering classes and labs,
-o   Completed Matlab assignments prior to due date because I thought they were fun, enjoyed the challenge and problem solving skills it made me invoke.
-o   For Economic decision analysis class, noticed that many problems had similar steps and involved a lot of number crunching. Per professors advice, I created programs in my calculator that would help solve problems. I taught myself how to do this, using skills from Matlab and taught myself how to create programs in a TI-89 calculator
-o   Models of vehicle dynamics – Did this many times in CAD. It involved using KBE tools to pull hard points of suspension models and map specific components to a skeleton to model specific part motions. I also became proficient with using IPS, for creating dynamic models of flexible tubes/wires for those relevant checks, and so I could delve into brake lines checks when suspension work slowed down.  It only took a few months at Ford when I actually became a resource for other employees trying to learn this process.
-o   Constantly working with engineers from different commodities in current role. One of my most frequent tasks is to check clearance from components to component in a vehicle. When there is a clearance requirement violated, I would email the engineers of the relevant components and work with them to come up with a solution. There were times when I even created my own proposal for the engineers to use
-▪▪▪TMD study – where positioned, using motion solids to find area in which could be placed without violating required clearances (D544) Did similar for D568
-▪▪▪Cap replacement study for strut for D544
-▪▪▪Proposal for wire harness connector – not symmetrical
-o   Gaming engine – Never used unreal or unity, but a long time ago I did create RPG games using an RPG maker – I think it was called Hamster Republic or something
-o   Bachelor’s in Mechanical engineering, considered a minor in EE, considered majoring in Computer engineering in earlier days.
- 
- 
-Questions for V2V/P2V
--          Tell me about a typical day working in this role? Give example of a project that has been worked on or is the process of being worked on?
--          What do you enjoy most about working in (the EESE) department?
--          Where could I find myself later in this position, say 5 years in the future?
--           
--          What is the timeframe for making a decision, and when can I expect to hear back?
- 
-Prepare problem solving examples
--          Personal life: Temperature sensor, circuit board soldering, headphone fixes, etc
-DENSO Lumicam experience may be helpful here – really enjoyed measuring light values, solving problem, etc.
- 

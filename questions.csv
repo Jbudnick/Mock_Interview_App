@@ -18,203 +18,93 @@ Describe a project in which you improved something
 How have you solved problems in a project you've done? Why did you chose this project? Why did you choose this model?
 How did you validate your data?
 If you could do one thing done differently on your project, what would it be?
-In my COVID-19 forecasting project, one thing I would have done differently would be to use results on a county by county basis as opposed to a state by state basis. This would have taken more time as it would turn a dataset of 50 states into over 3000 counties, but by using a state by state basis, I was forced to make the assumption that each state had the same distribution of population densities. Moreover, when I started the project only several states were currently at their peak of new cases, and now nearly half of the states are, so there is a much more limited selection of recovered states to choose from to make predictions for each state. By using a county by county basis instead of state by state, there would be a much greater selection available of recovered counties with similar population densities to draw more accurate insights from.
-Tell me about a challenge you faced during the course of a project, focus one technical challenge, one soft challenge - challenge primarily related to data, tech, etc
-One challenge I faced during my COVID-19 project was strange results for some states when I ran my model on them. Sometimes I would not see any improvement in the number of new cases with very low social distancing, and sometimes the estimation for the state was a higher number of new cases with maximum social distancing, which doesn't make any sense. I solved this problem by paying close attention to the subset of the states chosen to draw insights for a state, normalizing the date so that the curves of each state were as closely aligned as possible, and then tweaking the training data so that it didn't capture decreasing trends in social distancing as people returned to public activity after the peak of new case in a certain state in the subset, but not so much that the factors that drove the peak down in the first place were excluded. In the end, I was able to get viable results for many of the states currently at their maximum number of new cases.
-How did you normalize the dates?
-During my time at Galvanize, I was required to present my final capstone project in 4 minutes or less and make my project interpretable to the audience in that time frame. During the early stages of my project, my model was so complicated that it included a random forest that consisted of every single feature time lagged, comprising a dataset of 188 features. In this stage, my model was so uninterpretable that it took multiple sessions of explaining what I did, so there was no way I was going to be able to explain this to an audience in 4 minutes or less. After reducing the time lagged features to simplify so that only the target variable, which was the number of daily new cases, was time lagged, I reduced the number of features from 188 to 30 and was still getting viable results, and the model was much easier to explain. In the end, I was able to present and explain my project thoroughly while meeting the time requirement.
-
+Tell me about a technical challenge you faced during the course of a project
+Tell me about a soft challenge you faced during the course of a project
 Tell me about a time when you fixed or improved a process or procedure
 
 #Module 1: Programming, Databases and Big Data, Statistics
 
 Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?
-    I used version control in data science projects using git. Github is very helpful in collaborating on code with a partner, also VS Code has a Liveshare feature that I find very helpful as well. In developing code with a group, everyone checks out their own branch and then we merge these branches into the master when the new features are working. Communication is also very helpful to avoid having to deal with merge conflicts.
 What have you used as your development environment? In your opinion when should scripts and jupyter notebooks be used?
-    I have been using VScode as my development environment, but I have used Python idle and Atom in the past. I think that Jupiter notebooks should be used when producing graphics or learning a new python library, but scripts should be primarily used for everything else.
 What data structures do you find useful in Python 3? Can you give examples when you might use each one?
-    I find lists and dictionaries helpful. A list is helpful when iterating through a function and then tracking the changes to the variable as it goes through. This can be helpful to input to create scatter plots. Dictionaries are helpful when replacing large quantities of text or storing counts.
 In your Python code, when do you choose to us a functional vs. object oriented approach? What are the functional and object-oriented paradigms?
-    Functional approach is better when what you are trying to do can be characterised as a verb; Object oriented when what you are trying to do is a noun. Functional oriented paradigms treat programs as mathematical functions and avoids mutable data. Object oreinted paradigms treat programs as interacting with objects/datafields and their interactions with one another.
 In your opinion, what makes good code?
-    Good code is robust, flexible, and readable. Someone reading the code should be able to tell what you are doing, The code should be resilient to change (changing a hard-coded variable won't break it)
 Databases and Big Data
 How do you define Big Data? What do you think makes it difficult to work with? Can you give an example of how you have worked with Big Data in the past?
-    Big data is data that is too big to work with on one machine. I think what makes it difficult to work with is the sheer volume and the difficulty in examining all contained values quickly. An example of how I worked with Big Data was processing tweets using Spark on a case study.
 Compare and contrast SQL and noSQL databases. What is one major organizational difference betweeen the two? What data do you consider ideal for each? How have you used each type of database?
-    SQL is relational and contains a schema, noSQL does not. When the schema is not likely to change, SQL is a better choice. When the data is unstructured and likely to change, nosql is a better choice. NOsql mongodb, sql, postgresql
 Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?
-    MapReduce is the programming model which divides the data into separate sections/clusters to process and then aggregates them all at the end to expedite processsing. 
 Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? And how does Spark work with and return results on distributed data?
-    If one cluster fails, Spark can still generate a result due to resilient distributed datasets (RSS). Spark features an advanced DAG engine that makes it much faster to process data. Spark limits the number of times read from and writing to disk, whereas MapReduce does this with every operation, making it slower.
 Statistics
 What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
-    Normal, it is easy to explain and to work with, and many methods can be used for its analysis, knowing a data distribution is normal means that we can use either a Z or t test which are both easy to calculate probabilities.
 What's a confidence interval? Explain how you might calculate one for a mean, using two very different methods.
-    A confidence interval is our measure of confidence that a specific population value lies between a minimum and maximum value. I would calculate a confidence interval for a mean by using the mean of a sample, the sample size, and the sample's standard deviation and then calculating a z score to find the bounds. 
-    Another method is to use bootstrapping on the sample first, or use python or another calculation tool.
-    Use integral of Z curve to get area to desired probability, then use the likelihood of that area to get z-scores, convert to values
 Explain, step-by-step, how you would perform a frequentist hypothesis test.
-    Determine null and alternative hypothesis
-    Determine significance level
-    Evaluate test statistic
-    Evaluate p value of test statistic, if it less than significance level, reject null hypothesis, if greater, fail to reject null hypothesis.
 Our last hypothesis test was underpowered. What's statistical power? If we were to try our test again, what could we do to increase our power?
-    Statistical power is the measure of strength of a study, or the probability of correctly rejecting the null hypothesis. If we were to try our test again, we could increase our power by increasing the sample size, increasing alpha (though this would also increase the chance of a type 1 error), increasing the effect size, or reducing the standard deviation.
 What's the difference between probability and statistics?
-    Probability is the use of given parameters of a distribution to estimate the expectation of future occuring data in said distribution. Predicting future events
-    In statistics, we have established known parameters from past tests and are able to draw analysis from said data. Analyzing past events
-Module 2: Supervised/Unsupervised Machine Learning
+
+#Module 2: Supervised/Unsupervised Machine Learning
+
 Supervised Learning - Regression (specifically)
 Give an example of when you've applied linear regression in the past where interpretability of the coefficients was a priority. What did you do to ensure that you had reliable coefficients?
-     I did a case study a few weeks ago using linear regression that I had to present on predicting heavy equipment auction prices. To ensure that the coefficients were reliable, I plotted the data of the target value versus the specific features and the regression model of that particular feature to see how well it fit the data. 
 What is the difference between linear and logistic regression, and how do you interpret the coefficients for each type of model?
-    Linear regression creates a linear model between features.
-    Logistic regression generates a curve that approaches an asymptote on each end for associated features. 
-    The coefficients explain how much a certain feature influences the model.
 Explain how regularization helps prevent overfitting in a linear/logistic regression. What are the different types of regularization, and how is the cost function different for each type?
-    Lasso and Ridge. Lasso has a cost function that adds both the OLS cost function and the squared of error, whereas ridge regression adds the absolute value of the squared of the error.
 In logistic regression, maximum likelihood estimation is used to determine the feature coefficients. Can you explain, at a high level, how MLE works? Feel free to make this specific to a binary classifier.
-    MLE is used to estimate the parameters of a distribution when have the data using the maximum log odds for the coefficient per feature.
 What metrics might you use to describe how well your linear regression fits the data. What are the pro and cons of each metric?
-    R ** 2, r, RMSE
-    R ** 2 pro:
-    easily interpretable (x % of data can be explained by...)
-    Has set range of values 0 to 1
-    R ** 2 con:
-    if fit is nonlinear, value will still be poor even if a different kind of correlation exists
-    RMSE pro:
-    Measure of uncertainty in prediction
-    Second degree loss function
-    RMSE con:
-    More sensitive to outliers/incorrect data
-Supervised Learning
+
+#Supervised Learning
+
 What is the bias/variance trade-off in supervised machine learning? What process do you follow to ensure your model generalizes well to unseen data?
-    Bias/variance trade off is the concept by which if a model fits the training data very well, it will likely overfit the test model as the model will be picking up on random noise as opposed to the actual signal in the data. The process I follow is to split the data into a training and test set, and sometimes cross validate and calculate the MSE of each model, choosing the test parameters resulting in the lowest MSE of the test data.
 Explain how the decision tree (classification) algorithm works.
-    It is a greedy algorithm that splits the data a defined number of times to split the data into several different nodes with different characteristics in data.
 How does a random forest differ from a single decision tree? Why are its predictions more generalizable?
-    A random forest utilizes a number of decision trees in a model which have several randomly generated components, reducing ovefitting and variance through the ensemble. It's predictions are more generalizable because it uses a number of analses as opposed just to one so it cuts out on the variance.
 What is an ensemble method? What ensemble models do you know? How does each achieve a low-bias, low-variance prediction?
-    An ensemble method is a statistical model that uses a group of models to perform regression/classification to reduce variance and increase flexibility in the data. Random forest, Bayes, bagging
-    Each achieves a low-bias, low-variance prediction by aggregating multiple models to get a more generalized result that picks up more on the trend of the data as opposed to certain anomolies that may be present in any one model selected.
 You're working on a classification model and getting poor accuracy on your test set. What next steps would you consider?
-    Reduce dimensionality and the degree of the model, it is likely overfit to the data
-Unsupervised Learning
+
+#Unsupervised Learning
+
 Describe a text processing project you've completed. How did you featurize the data?
-    Bigfoot sightings article. Data was featured with NMF so that weights were more easily interpretable. We altered the number of features and topics until we got text categories that made sense.
 Given a dataset with 1000s of features, what can you do to reduce its dimensionality?
-    PCA, involve only features with the greatest percent of variance in the data.
 What's the difference between hard and soft clustering. What models might you try in each case?
-    The difference is hard clustering involves classifying data into one node or another; soft clustering can involve decimal numbers representing the probability of each node. K-means clustering would be hard clustering, and NMF would be soft clustering
 How would you explain a latent topic to a layperson?
-    A latent topic is a group subject that encompasses related words into a category. Latent means hidden, 
 
 How do you evaluate the performance of an unsupervised model?
-    Using intra-cluster distance and inter-cluster distance. A good model will have a large inter-cluster distance and a small intra-cluster distance.
-2. How is string interpolation performed?
-String interpolation is performed by using either a format string or format argument and curly brackets in the string.
-gradYear = 2013
-major = 'Mechanical Engineering'
-print('I graduated college in {} with a major in {}'.format(gradYear, major))
-3. What is the difference between “is” and “==”?
-"Is" checks if the two objects have both the same value and object type, whereas "==" only checks if the values are the same. In the example below, a and b are both assigned a value of 1, but one as float and the other as integer, so using "is" will return false, but using '==' will return True:
-a = 1.0
-b = 1
-a is b will return False
-a == b will return True
-12. Does python call by reference or call by value?
-Python calls by reference to memory cells containing information. Some memory locations hold objects and others are pointers to other memory locations.
-22. What is your favorite library in Python?
-	Ultimately, it depends on what I'm planning on doing, but I would say overall my favorite library in Python is Pandas. Pandas helps keep data organized and presentable and easily transferable to other libraries such as matplotlib for plotting and visualization, and scipy for machine learning methods for further analysis. Pandas also has many functions such as eliminate duplicates, drop/renaming axises, etc. that make working with it easy.
-24. How would you round a number to 3 decimal places?
-Rounding a number to 3 decimal places can be done using the round function : round(x, 3).
-27. What is the difference between dictionaries and JSON?
-The difference between dictionaries and JSON is that a dictionary is a Python datatype used to store keys to values, and a JSON is a file type, often the result of web scraping, which consists of a string used to transfer data.
-38. How to combine two lists into a list of tuples?
+How is string interpolation performed?
+What is the difference between “is” and “==”?
+Does python call by reference or call by value?
+What is your favorite library in Python?
+How would you round a number to 3 decimal places?
+What is the difference between dictionaries and JSON?
+How to combine two lists into a list of tuples?
 This depends on how we want the elements in each list arranged into tuples - do we want the list of tuples as follows: the first element in the list to consist of a type of the first element in each list? If so, are the two lists equal? Assuming this, this is how I would approach this issue. create an empty list defined as tuple_list, then a for list : for i in len(list1): tuple_list.append((list1[i], list2[i]).
-Zip function can also be used.
-39. How can you sort a dictionary by key, alphabetically?
-First, use the .items() method to convert the dictionary into a list of tuples, then define it as a new dictionary while using the sorted() function to sort the values by the key.
-42. Why would you use enumerate() when iterating on a sequence?
-Using enumerate can supply an index to the sequence, often useful for iterating through items in a sequence through indexing on a list. It can also help with tracking the number of iterations through a list and/or incrementing
-49. Return a list of keys from a dictionary.
-list(dictionary.keys())  
+How can you sort a dictionary by key, alphabetically?
+Why would you use enumerate() when iterating on a sequence?
+Return a list of keys from a dictionary.
 
+#Teamwork:
 
-Notebook, write down question, its okay to take notes main point of question
-Change responses into notes, might know what you want to tell them
-healthcare agency:
-making a difference, critical thinking, passion for problem solving, how specifically help the company, excited about the role because that's what I'm good at, past project work related to work, I'm excited about this because it's a great fit for my skillset. SOunds like you need someone analytical for this role… etc
-challenging project:
-COVID-19 Forecasting
-	why challenge, focus on soft skills, plugging skills in, took on a project that was new to me, knew it would be a challenge, data is hard to work with, connect with them, some of the aspects challenge, how to present, public presentation, and then go into worked through by that by: (lesson learned)
-	result: Why want to know challenge
-	working with new things, skim over dataset part, hard dataset to work with, worked hard to use extra resources, tried new things and then persisted, stay positive about the project
-Teamwork:
-Used individual strengths, galvanize case studies, are you team lead, what role do I play: initiator
 Tell me about one of your weaknesses (or a mistake that you have made)
 Tell me about your strengths
 Why did you get into data science (Professional Introduction)?
 Why are you interested in this position/company? (prepare for every interview)
 Describe a situation where you’ve had a conflict with a manager, and how you dealt with it.  What was the outcome?
-In my last job as a electrical distribution systems engineer at Ford, there was a time when my manager came by to briefly ask me to set up part numbers in a database for a new program variation, and I agreed to do it. When I started to work on it, I wanted to double check a few details about the part numbers, so I asked my co-workers. They didn't know,  so I tried to confirm my understanding with my manager. He got upset and apparently didn't have time to talk about it. I was a little upset myself because I wanted to make sure I did this task correctly, so I later brought this up with him and he apologized and we were able to resolve this conflict.
-“What’s the most challenging/exciting project you have done in the past two years?”
+What’s the most challenging/exciting project you have done in the past two years?
 
 “Tell me about the most difficult technical challenge you’ve encountered and how you resolved it.”
 “Tell me about a time you were asked to do something you had never done before. How did you react, and what did you learn?”
-- Job switch from CAD To EDS
-	- ME background, EE job, enthusiastic about opportunity to branch out and learn new things, ready for my next challenge. I learned that change is not a bad thing and I actually had work to do
-
 Do you want to mentor other data scientists?
 
 (shorten - dumb it down - less technical for recuiters)
-Yes, I would love the opportunity to mentor other data scientists eventually. During assignments at Galvanize, I always made sure to go out of my way to help my classmates if they were having trouble by having them share their screen and trying to walk them through the problem if I had gotten through the same one. I found it satisfying to help a fellow classmate, and also found that it helped me solidify my own understanding of the concept being taught. For example, I had one classmate that was having trouble transmitting their code. I shared a technique I learned while working on a project (using magic commands to load specific scripts automatically). I ended up learning that the syntax of this command was very important (leaving the space out after the parentheses and it would not work otherwise) - now whenever I use these commands and they don't work, that is always the first thing I look at. I really enjoyed being a resource.
-1. If you have a degree, why did you choose to study what you studied? 
-I chose to study mechanical engineering because I have always had a knack for problem solving and math. I found the curriculum went in depth with these subjects and was attracted to the broad spectrum of opportunities in that area.
-I have a Bachelor's of Science Degree in Mechanical Engineering. I chose to study this field because I did not know what I wanted to do in college, but excelled in math and the broadness of career opportunities in this field  appealed to me. This led to my previous career in automotive engineering. I liked the stability and the pay in this field, especially since this was while Detroit coming back from the recession and plenty of opportunities were available. However, after several years in this field, after I could afford to pay back my student loans and purchase all of the material things I've ever wanted, I realized I wasn't happy - this career path didn't involve any of the math or roots of my interests/passions that led me to pursue engineering in the first place. On top of that, it was stressful and it felt like my career trajectory was just going to be more of the same until I retired.
- 
-2. If you had a previous career, what did you like most about it? The least? 
-I enjoyed the challenges and various problem solving opportunities. I disliked the lack of location freedom and threat of layoffs in the automotive industry, as well as the red tape.
- 
-3. What sparked your interest in software engineering or data science?
-My favorite part of my mechanical engineering curriculum in college was learning programming in Matlab and wanted to pursue this further. 6 years into my engineering career I considered going back to school to do something more coding based, but after doing research found that data science is the perfect alignment of my past skills and the areas that I wanted to explore.
-4. What are your primary motivations for becoming a Data Scientist/Software Engineer?
-After examining different fields for my career change, I began listening to podcasts, attending workshops, and reading everything I could to get more knowledge about data science. After learning everything I could about this exciting new field, I knew for sure that I wanted to be part of this technological revolution.
-5. What aspects of the industry are you most interested in?
-I find machine learning and artificial intelligence fascinating and can't wait to use and foster these skills further so I can better inform business decisions and solve problems.
- 
-6. What do you love about the work of coding?
-I love how there is always a new library or functions to learn and explore and the way I can solve problems and continually evolve and progress with my skills. When I'm coding, I find time flies by and I'm always fueled by the desire to make things better and all the new features I could implement in my code.
-7. What are a few technologies that have you recently been exposed that you find fascinating? 
-Neural networks, the way we can program something to simulate picking up on things similar to the way a human brain does. 
-8. Why do you find them fascinating?
-We take it for granted how our brain picks up on these things but I never really thought about how exactly this takes place. Learning about how a computer learns about these things is very interesting.
-9. What have you been able to accomplish recently, using new technology?
-I have been able, with new technology, learn how to model and predict trends in data over time with machine learning on python.
-10. What motivating mindset has helped propel you forward when overcoming challenges?
-I am motivated by seeing a project grow to fruition and leaving something it in a better place than i found it in. I decided to come to Galvanize after a lot of research regarding its reputation in the Denver data science community and the fact that it would get me the career change and location change that I have been looking at for many years, and much more quickly than a Master's Degree (which I was originally looking at). I wanted a career change because I felt detached and uninterested in my engineering career and any paths going forward with it did not appeal to me. The math and programming I learned in college played virtually no role in my career and I wanted to make use and explore these talents and passions more. In the longer term, I want to establish a data science career in the Denver, CO or Boulder area and continue exploring my newfound passion and learn all that I can and make a difference in the world.
-
-"what really captured my attention was AI"
-"So much to be done with data itself"
+If you have a degree, why did you choose to study what you studied? 
+If you had a previous career, what did you like most about it? The least? 
+What sparked your interest in software engineering or data science?
+What are your primary motivations for becoming a Data Scientist/Software Engineer?
+What aspects of the industry are you most interested in?
+What do you love about the work of coding?
+What are a few technologies that have you recently been exposed that you find fascinating? 
+Why do you find them fascinating?
+What have you been able to accomplish recently, using new technology?
+What motivating mindset has helped propel you forward when overcoming challenges?
 
 Why are you leaving your current job? / Why did you leave your last job?
-Although I enjoyed the ample challenges and problem solving opportunities in my engineering career, I realized  I had much greater passion for coding and statistics than in the engineering process, so I did some soul searching to plan out my next move. I decided to pivot into data science to carry forward my critical thinking and passion for problem solving into a job that I will be excited about.
 What are your 3 greatest strengths/weaknesses?
-Strengths
-1 – Fast Learner. 
-Always told during Ford performance reviews
-Picked up body CAD quick enough to help meet FDJ for CX482/483 programs, originally designated as chassis designer
-. I catch on to new things quickly and am very flexible with different kinds of taste thrown my way, and am consistently reminded of this at my annual performance reviews. I welcome opportunities to learn and grow and embrace any challenge that I am given.
-2 – Intelligence. My high GPA is an excellent indicator of my intelligence. I’ve always excelled in school and never had too much of a problem with a class. No matter what the subject or how difficult something is, I will manage to learn it and will not rest until I am proficient with the subject.
-Proactive, always approach new tasks as a new opportunity to learn and grow
-3 – Initiative. I am not afraid to venture into a task which is brand new to me.
-Scuba club - clean up Detroit River/Belle Isle, initiator/leader
-CAD Designer - Embra
- For instance, this year I was initiated in to the Tau Beta Pi Honor Society, and through the organization I participated in Family Engineering Night when volunteers were requested with less than a 24 hour notice. I ended up presenting to a group of elementary school children regarding the engineering design process in which a child-friendly engineering related activity was performed. Although this was short notice for me especially for going in front of a large group of people, I took initiative and was lauded for a job well done by both the Family Engineering Night coordinator and the parents of the participating children.
-4- Determination
-5 – Goal oriented
-Weaknesses
 Give me an example of a time you took initiative, where you went above and beyond what was expected of you.
 Tell me about a timed when you had to manage several tasks at the same time that will convince me that you are capable of multitasking.
 Describe a situation where you’ve had a conflict with another individual, and how you dealt with it.  What was the outcome?
@@ -232,7 +122,6 @@ What steps do you follow to study a problem before making a decision? Why?
 Have you ever had to "sell" an idea to your classmates or co-workers? How did you do it? Did they accept your idea?
 Give me an example of a time when you were able to successfully communicate with another person even when that individual may not have personally liked you (or vice versa). How did you handle the situation? What obstacles or difficulties did you face? How did you deal with them?
 What, in your opinion, are the key ingredients in guiding and maintinating successful relationships?
-Communication is key. On one hand, it is very important to express ideas and opinions, as well as constructive criticism to the other team members, and effectively demonstrate your skills and abilities. However, it is also important to take the other team members ideas and opinions into account, and acknowledge their criticism without being defensive, while at the same time realizing that the co-workers are the key to advancing in an organization.
 #CREATIVITY
 Tell me about a problem that you've solved in a unique or unusual way. What was the outcome? Were you happy or satisfied with it?
 Give me an example of when someone brought you a new idea that was odd or unusual. What did you do?
@@ -240,11 +129,9 @@ Give me an example of when someone brought you a new idea that was odd or unusua
 Tell me about a time when you had to make a decision without all the information you needed. How did you handle it? Why? Were you happy with the outcome?
 Give me an example of a time when you had to be quick in coming to a decision. What obstacles did you face? What did you do?
 What is the most difficult decision you've had to make? How did you arrive at your decision? What was the result?
-One of the most difficult decisions I’ve had to make was choosing a major. I was torn between civil and mechanical engineering. I arrived at this decision by weighing the aspects of each major against each other. I ended up choosing mechanical because I like the variety of work I could do with a mechanical engineering degree, and a civil engineering degree seemed a bit more confined in terms of scope. 
 #GOAL SETTING
 Give me an example of an important goal which you have set and tell me how you reached it. What steps did you take? What obstacles did you encounter? How did you overcome the obstacles?
 Tell me about a goal that you set that you did not reach. What steps did you take? What obstacles did you encounter? How did it make you feel?
-Failed Excel assessment for DaVita, used as learning experience
 Where do you see yourself in 5 years?
 
 #INITIATIVE
@@ -300,13 +187,14 @@ What was your logic?
 What was your reasoning?
 Where were you when this happened?
 What time was it?
-Who else was involved?
-Tell me more about your interaction with that person.
+Who else was involved? Tell me more about your interaction with that person.
 What was your role?
 What obstacles did you face?
 What were you thinking at that point?
 Lead me through your decision process.
 How did you prepare for that?
+
+#More questions
 How would you describe yourself?
 What are your long range and short range goals and objectives?
 What do you see yourself doing five years from now? Ten years from now?

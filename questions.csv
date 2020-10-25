@@ -34,7 +34,9 @@ How do you define Big Data? What do you think makes it difficult to work with? C
 Compare and contrast SQL and noSQL databases. What is one major organizational difference betweeen the two? What data do you consider ideal for each? How have you used each type of database?
 Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?
 Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? And how does Spark work with and return results on distributed data?
-Statistics
+
+#Statistics
+
 What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
 What's a confidence interval? Explain how you might calculate one for a mean, using two very different methods.
 Explain, step-by-step, how you would perform a frequentist hypothesis test.
@@ -91,7 +93,6 @@ What’s the most challenging/exciting project you have done in the past two yea
 “Tell me about a time you were asked to do something you had never done before. How did you react, and what did you learn?”
 Do you want to mentor other data scientists?
 
-(shorten - dumb it down - less technical for recuiters)
 If you have a degree, why did you choose to study what you studied? 
 If you had a previous career, what did you like most about it? The least? 
 What sparked your interest in software engineering or data science?
@@ -145,8 +146,6 @@ What was the best idea you came up with during your professional or college care
 
 #INTEGRITY/HONESTY
 Discuss a time when your integrity was challenged. How did you handle it?
-During a difficult lab report, I knew someone who knew someone who had done the lab last semester and could send me the completed lab report to make it easier for me. However, I knew this would not be right since it would most likely be copying and taking someone else’s work. Although this offer was tempting, it was not ethical so that was a deal breaker for me. I handled this situation by politely rejecting this offer and doing the lab on my own.
-During a class project that I worked on last year in designing trailer cabinets for motorsports enterprise teams, it was my role to discuss the conclusions and recommendations portion of our project for our final presentation. When critically examining any imperfections of our work, I resolved to state that in order to come up with an even better solution in the future for this project, as a team we would have spent more time face to face with enterprise team leaders in order to get more feedback in terms of what criteria they would like to see in their trailer cabinets, that way we could come up with a menu of solutions specialized to each specific team’s needs instead of relying solely on information they gave us through email. I had a teammate who objected to this, and told me to instead say that the project could have been improved if we were given a larger budget, that way it sounds like it’s the project stakeholders fault instead of ours that our project could have been better. I handled it by explaining that the budget had nothing to do with any imperfections in our project, and went with my original plan. The result was no negative feedback based on this answer and an excellent grade in the class regardless of the imperfection of the final result.
 Tell me about a time when you experienced a loss for doing what is right. How did you react?
  
 #INTERPERSONAL SKILLS

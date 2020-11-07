@@ -5,7 +5,23 @@ import random
 num_questions = 5
 current_category = ''
 line_num = 0
-follow_up_prob = 0.80
+follow_up_prob = 0.40
+
+def select_mode(df):
+    print('Select a mode: \n 1. All Questions (Data Science + Behavioral) \n 2. Behavioral Only \n 3. Behavioral + Tech (No Data Science) \n 4. Tech Only (Data Science) ')
+    mode_select = None
+    while mode_select not in (1, 2, 3, 4):
+        mode_select = int(input('Select Mode 1, 2, 3, or 4: '))
+    if mode_select == 1:
+        new_df = df
+    elif mode_select == 2:
+        new_df = df[df['Category'] == 'Behavioral']
+    elif mode_select == 3:
+        new_df = df[(df['Category'] != 'Data Science') &
+                    (df['Category'] != 'Statistics')]
+    else:
+        new_df = df[df['Category'] != 'Behavioral']
+    return new_df
 
 Interview_df = pd.DataFrame(columns=['Question', 'Category'])
 
@@ -19,16 +35,10 @@ for line in fhand:
         Interview_df.loc[line_num] = [line.replace('\n', '').rstrip(',"').lstrip('"'), current_category]
         line_num += 1
 
-#Add category designation function here
-
-num_questions = int(input('Enter number of questions: '))
-
-if num_questions <= 0:
-    print('test')
-
-
 probe_q = Interview_df[Interview_df['Category'] == 'PROBES']['Question'].values
+Interview_df = select_mode(Interview_df)
 questions = Interview_df[Interview_df['Category'] != 'PROBES']['Question'].values
+num_questions = int(input('Enter number of questions: '))
 
 Interview_questions = random.sample(set(questions), num_questions)
 

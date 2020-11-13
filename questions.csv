@@ -1,208 +1,234 @@
-"#Behavioral,"
-"Tell me about yourself?,"
-"What do you consider your biggest professional accomplishment to-date?,"
-"What’s the last thing you did that “wasn’t your job”?,"
-"Ok, Let's be honest. What bad habits of other people drive you crazy?,"
-"What team are you the biggest fan of?,"
-"What do you always think takes too long?,"
-"Where do you see yourself in 3 years?,"
-"What do you do when a project's requirements change at the last minute?,"
-"If you have a degree, why did you choose to study what you studied? ,"
-"If you had a previous career, what did you like most about it? The least? ,"
-"What’s the most challenging/exciting project you have done in the past two years?,"
-"“Tell me about the most difficult technical challenge you’ve encountered and how you resolved it.”,"
-"“Tell me about a time you were asked to do something you had never done before. How did you react, and what did you learn?”,"
-"How would you describe yourself?,"
-"What are your long range and short range goals and objectives?,"
-"What do you see yourself doing five years from now? Ten years from now?,"
-"What are your long range career objectives?,"
-"How do you plan to achieve your career goals?,"
-"What are the most important rewards you expect in your career?,"
-"How well do you work with people? Do you prefer working alone or in teams?,"
-"How would you evaluate your ability to deal with conflict?,"
-"Have you ever had difficulty with a supervisor? How did you resolve the conflict?,"
-"What's more important to you -- the work itself or how much you're paid for doing it.,"
-"What do you consider to be your greatest strengths and weaknesses?,"
-"How would a good friend describe you?,"
-"Describe the best job you've ever had.,"
-"Describe the best supervisor you've ever had.,"
-"What would your last boss say about your work performance?,"
-"What motivates you to go the extra mile on a project or job?,"
-"Why should I hire you?,"
-"What qualifications do you have that make you successful in this career?,"
-"What do you think it takes to be successful in a company like ours?,"
-"In what ways do you think you can make a contribution to our company?,"
-"Do you have any hobbies? What do you do in your spare time?,"
-"What qualities should a successful manager possess?,"
-"What are the attributes of a good leader?,"
-"Which is more important: creativity or efficiency? Why?,"
-"What's the most recent book you've read?,"
-"Describe the relationship that should exist between the supervisor and those reporting to him or her?,"
-"What two or three accomplishments have given you the most satisfaction? Why?,"
-"If you were hiring a job-seeker for this position, what qualities would you look for?,"
-"Do you have plans for continued study? An advanced degree?,"
-"In what kind of work environment are you most comfortable?,"
-"How do you work under pressure?,"
-"Are you good at delegating tasks?,"
-"What's one of the hardest decisions you've ever had to make?,"
-"How well do you adapt to new situations?,"
-"Why did you decide to seek a position in this company?,"
-"What can you tell us about our company?,"
-"What interests you about our products?,"
-"What do you know about our competitors?,"
-"What two or three things are most important to you in your job?,"
-"Are you seeking employment in a company of a certain size? Why?,"
-"What are your expectations regarding promotions and salary increases?,"
-"What criteria are you using to evaluate the company for which you hope to work?,"
-"Do you have a geographic preference? Why?,"
-"Are you willing to relocate?,"
-"Are you willing to travel for the job?,"
-"Why do you think you might like to live in the community in which our company is located?,"
-"What major problem have you encountered and how did you deal with it?,"
-"What have you learned from your mistakes?,"
-"What have you accomplished that shows your initiative and willingness to work?,"
-"What motivates you?,"
-"#Technical,"
-"What has been your biggest technical challenge to date?,"
-"Can you break down an algorithm you used on a project?,"
-"What tools have you used?,"
-"Describe a project in which you improved something,"
-"How have you solved problems in a project you've done? Why did you chose this project? Why did you choose this model?,"
-"How did you validate your data?,"
-"If you could do one thing done differently on your project, what would it be?,"
-"Tell me about a technical challenge you faced during the course of a project,"
-"Tell me about a soft challenge you faced during the course of a project,"
-"Tell me about a time when you fixed or improved a process or procedure,"
-"In your opinion, what makes good code?,"
-"What sparked your interest in software engineering or data science?,"
-"What are your primary motivations for becoming a Data Scientist/Software Engineer?,"
-"What aspects of the industry are you most interested in?,"
-"What do you love about the work of coding?,"
-"What are a few technologies that have you recently been exposed that you find fascinating? ,"
-"Why do you find them fascinating?,"
-"What have you been able to accomplish recently, using new technology?,"
-"What motivating mindset has helped propel you forward when overcoming challenges?,"
-","
-"Why are you leaving your current job? / Why did you leave your last job?,"
-"What are your 3 greatest strengths/weaknesses?,"
-"Give me an example of a time you took initiative, where you went above and beyond what was expected of you.,"
-"Tell me about a timed when you had to manage several tasks at the same time that will convince me that you are capable of multitasking.,"
-"Describe a situation where you’ve had a conflict with another individual, and how you dealt with it.  What was the outcome?,"
-"What’s the biggest mistake you ever made and how did you try to fix it?,"
-"Do you like working in groups or alone? Tell Why?,"
-"What 3 words best describe you?,"
-"Tell me about a situation in which you have had to adjust to changes over which you had no control. How did you handle it?,"
-"Tell me about a time when you had to adjust to a classmate's or colleague's working style in order to complete a project or achieve your objectives.,"
-","
-","
-","
-","
-","
-","
-","
-","
-"Describe the project or situation that best demonstrates your analytical abilities. What was your role?,"
-"Tell me about a situation where you had to solve a difficult problem. What did you do? What was your thought process? What was the outcome? What do you wish you had done differently?,"
-"What steps do you follow to study a problem before making a decision? Why?,"
-"Have you ever had to ""sell"" an idea to your classmates or co-workers? How did you do it? Did they accept your idea?,"
-"Give me an example of a time when you were able to successfully communicate with another person even when that individual may not have personally liked you (or vice versa). How did you handle the situation? What obstacles or difficulties did you face? How did you deal with them?,"
-"What, in your opinion, are the key ingredients in guiding and maintinating successful relationships?,"
-"Tell me about a problem that you've solved in a unique or unusual way. What was the outcome? Were you happy or satisfied with it?,"
-"Give me an example of when someone brought you a new idea that was odd or unusual. What did you do?,"
-"Tell me about a time when you had to make a decision without all the information you needed. How did you handle it? Why? Were you happy with the outcome?,"
-"Give me an example of a time when you had to be quick in coming to a decision. What obstacles did you face? What did you do?,"
-"What is the most difficult decision you've had to make? How did you arrive at your decision? What was the result?,"
-"Give me an example of an important goal which you have set and tell me how you reached it. What steps did you take? What obstacles did you encounter? How did you overcome the obstacles?,"
-"Tell me about a goal that you set that you did not reach. What steps did you take? What obstacles did you encounter? How did it make you feel?,"
-"Where do you see yourself in 5 years?,"
-","
-"Describe a project or idea (not necessarily your own) that was implemented primarily because of your efforts. What was your role? What was the outcome?,"
-"EDP Report Revising Procedures,"
-"Describe a situation in which you recognized a potential problem as an opportunity. What did you do? What was the result? What do you wish you had done differently?,"
-"Tell me about a project you initiated. What did you do? Why? What was the outcome? Were you happy with the result?,"
-"What was the best idea you came up with during your professional or college career? How did you apply it?,"
-","
-"Discuss a time when your integrity was challenged. How did you handle it?,"
-"Tell me about a time when you experienced a loss for doing what is right. How did you react?,"
-" ,"
-"Describe a situation where you found yourself dealing with someone who didn't like you. How did you handle it?,"
-"Tell me about a time when you had to work on a team with someone you did not get along with. What happened?,"
-"Describe a situation where you had a conflict with another individual, and how you dealt with it. What was the outcome? How did you feel about it?,"
-"Tell me about a team project when you had to take the lead or take charge of the project? What did you do? How did you do it? What was the result?,"
-"What is the toughest group that you have had to get cooperation from? What were the obstacles? How did you handle the situation? What were the reactions of the group members? What was the end result?,"
-","
-"Describe a situation that required you to do a number of things at the same time. How did you handle it? What was the result?,"
-"How do you prioritize projects and tasks when scheduling your time? Give me some examples.,"
-"Tell me about a time when you worked with a classmate or colleague who was not doing their share of the work. How did you handle it?,"
-"Describe a situation in which you had to arrive at a compromise or help others to compromise. What was your role? What steps did you take? What was the result?,"
-"Tell me about a time when you had to work on a team that did not get along. What happened? What role did you take? What was the result?,"
-","
-"#Statistics,"
-"What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.,"
-"What's a confidence interval? Explain how you might calculate one for a mean, using two very different methods.,"
-"Explain, step-by-step, how you would perform a frequentist hypothesis test.,"
-"Our last hypothesis test was underpowered. What's statistical power? If we were to try our test again, what could we do to increase our power?,"
-"What's the difference between probability and statistics?,"
-","
-"#Data Science,"
-"Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?,"
-"What have you used as your development environment? In your opinion when should scripts and jupyter notebooks be used?,"
-"What data structures do you find useful in Python 3? Can you give examples when you might use each one?,"
-"In your Python code, when do you choose to us a functional vs. object oriented approach? What are the functional and object-oriented paradigms?,"
-"How do you define Big Data? What do you think makes it difficult to work with? Can you give an example of how you have worked with Big Data in the past?,"
-"Compare and contrast SQL and noSQL databases. What is one major organizational difference betweeen the two? What data do you consider ideal for each? How have you used each type of database?,"
-"Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?,"
-"Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? And how does Spark work with and return results on distributed data?,"
-"Give an example of when you've applied linear regression in the past where interpretability of the coefficients was a priority. What did you do to ensure that you had reliable coefficients?,"
-"What is the difference between linear and logistic regression, and how do you interpret the coefficients for each type of model?,"
-"Explain how regularization helps prevent overfitting in a linear/logistic regression. What are the different types of regularization, and how is the cost function different for each type?,"
-"In logistic regression, maximum likelihood estimation is used to determine the feature coefficients. Can you explain, at a high level, how MLE works? Feel free to make this specific to a binary classifier.,"
-"What metrics might you use to describe how well your linear regression fits the data. What are the pro and cons of each metric?,"
-"What is the bias/variance trade-off in supervised machine learning? What process do you follow to ensure your model generalizes well to unseen data?,"
-"Explain how the decision tree (classification) algorithm works.,"
-"How does a random forest differ from a single decision tree? Why are its predictions more generalizable?,"
-"What is an ensemble method? What ensemble models do you know? How does each achieve a low-bias, low-variance prediction?,"
-"You're working on a classification model and getting poor accuracy on your test set. What next steps would you consider?,"
-"Describe a text processing project you've completed. How did you featurize the data?,"
-"Given a dataset with 1000s of features, what can you do to reduce its dimensionality?,"
-"What's the difference between hard and soft clustering. What models might you try in each case?,"
-"How would you explain a latent topic to a layperson?,"
-"How do you evaluate the performance of an unsupervised model?,"
-"How is string interpolation performed?,"
-"What is the difference between “is” and “==”?,"
-"Does python call by reference or call by value?,"
-"What is your favorite library in Python?,"
-"How would you round a number to 3 decimal places?,"
-"What is the difference between dictionaries and JSON?,"
-"How to combine two lists into a list of tuples?,"
-"How can you sort a dictionary by key, alphabetically?,"
-"Why would you use enumerate() when iterating on a sequence?,"
-"Return a list of keys from a dictionary.,"
-"Do you want to mentor other data scientists?,"
-","
-"#PROBES,"
-"What steps did you take?,"
-"What action did you take?,"
-"What happened after that?,"
-"What did you say?,"
-"How did he/she react?,"
-"How did you handle that?,"
-"What was your reaction?,"
-"How did you feel about that?,"
-"What was the outcome/result?,"
-"Were you happy with that outcome/result?,"
-"What do you wish you had done differently?,"
-"What did you learn from that?,"
-"How did you resolve that?,"
-"What was the outcome of that?,"
-"Why did you decide to do that?,"
-"What was your logic?,"
-"What was your reasoning?,"
-"Where were you when this happened?,"
-"What time was it?,"
-"Who else was involved? Tell me more about your interaction with that person.,"
-"What was your role?,"
-"What obstacles did you face?,"
-"What were you thinking at that point?,"
-"Lead me through your decision process.,"
-"How did you prepare for that?,"
+#Introduction
+Tell me about yourself.
+Can you please walk me through your resume?
+Can you please tell me about your professional experience in 2-3 minutes?
+
+#Behavioral
+What do you consider your biggest professional accomplishment to-date?
+What’s the last thing you did that “wasn’t your job”?
+What bad habits of other people drive you crazy?
+What team are you the biggest fan of?
+What do you always think takes too long?
+Where do you see yourself in 3 years?
+What do you do when a project's requirements change at the last minute?
+If you have a degree, why did you choose to study what you studied?
+If you had a previous career, what did you like most about it? The least?
+If you had a previous career, do you think you will miss certain aspects of it after moving to a new career?
+What’s the most challenging/exciting project you have done in the past two years?
+Tell me about the most difficult challenge you’ve encountered and how you resolved it.
+Tell me about a time you were asked to do something you had never done before. How did you react, and what did you learn?
+How would you describe yourself?
+What are your long range and short range goals and objectives?
+What do you see yourself doing five years from now? Ten years from now?
+What are your long range career objective?
+How do you plan to achieve your career goals?
+What are the most important rewards you expect in your career?
+How well do you work with people? Do you prefer working alone or in teams?
+How would you evaluate your ability to deal with conflict?
+Have you ever had difficulty with a supervisor? How did you resolve the conflict?
+What's more important to you -- the work itself or how much you're paid for doing it
+What do you consider to be your greatest strength and weakness?
+How would a good friend describe you?
+Describe the best job you've ever had.
+Describe the best supervisor you've ever had.
+What would your last boss say about your work performance?
+What motivates you to go the extra mile on a project or job?
+Why should I hire you?
+What sets you apart from other candidates?
+What qualifications do you have that make you successful in this career?
+What do you think it takes to be successful in a company like ours?
+In what ways do you think you can make a contribution to our company?
+Do you have any hobbies? What do you do in your spare time?
+What kinds of projects do you like to work on in your spare time?
+What qualities should a successful manager possess?
+What are the attributes of a good leader?
+Which is more important: creativity or efficiency? Why?
+What's the most recent book you've read?
+Describe the relationship that should exist between the supervisor and those reporting to him or her?
+What two or three accomplishments have given you the most satisfaction? Why?
+If you were hiring a job-seeker for this position, what qualities would you look for?
+How would you describe your ideal workplace and team?
+Do you have plans for continued study? An advanced degree?
+In what kind of work environment are you most comfortable?
+How do you work under pressure?
+Are you good at delegating tasks?
+What's one of the hardest decisions you've ever had to make?
+How well do you adapt to new situations?
+Why did you decide to seek a position in this company?
+What can you tell us about our company?
+What interests you about our products?
+What do you know about our competitors?
+What two or three things are most important to you in your job?
+Are you seeking employment in a company of a certain size? Why?
+What are your expectations regarding promotions and salary increases?
+What are your expectations for salary?
+What criteria are you using to evaluate the company for which you hope to work?
+Do you have a geographic preference? Why?
+Are you willing to relocate?
+Are you willing to travel for the job?
+Why do you think you might like to live in the community in which our company is located?
+What major problem have you encountered and how did you deal with it?
+What have you learned from your mistakes?
+What have you accomplished that shows your initiative and willingness to work?
+What motivates you?
+What motivating mindset has helped propel you forward when overcoming challenges?
+Why are you leaving your current job? / Why did you leave your last job?
+What are your 3 greatest strengths/weaknesses?
+Give me an example of a time you took initiative, where you went above and beyond what was expected of you.
+Tell me about a timed when you had to manage several tasks at the same time that will convince me that you are capable of multitasking.
+Describe a situation where you’ve had a conflict with another individual, and how you dealt with it.  What was the outcome?
+What’s the biggest mistake you ever made and how did you try to fix it?
+Do you like working in groups or alone? Tell Why?
+What 3 words best describe you?
+Tell me about a situation in which you have had to adjust to changes over which you had no control. How did you handle it?
+Tell me about a time when you had to adjust to a classmate's or colleague's working style in order to complete a project or achieve your objectives.
+Describe the project or situation that best demonstrates your analytical abilities. What was your role?
+Tell me about a situation where you had to solve a difficult problem. What did you do? What was your thought process? What was the outcome? What do you wish you had done differently?
+What steps do you follow to study a problem before making a decision? Why?
+Have you ever had to sell an idea to your classmates or co-workers? How did you do it? Did they accept your idea?
+Give me an example of a time when you were able to successfully communicate with another person even when that individual may not have personally liked you (or vice versa). How did you handle the situation? What obstacles or difficulties did you face? How did you deal with them?
+What, in your opinion, are the key ingredients in guiding and maintinating successful relationships?
+Tell me about a problem that you've solved in a unique or unusual way. What was the outcome? Were you happy or satisfied with it?
+Give me an example of when someone brought you a new idea that was odd or unusual. What did you do?
+Tell me about a time when you had to make a decision without all the information you needed. How did you handle it? Why? Were you happy with the outcome?
+Give me an example of a time when you had to be quick in coming to a decision. What obstacles did you face? What did you do?
+What is the most difficult decision you've had to make? How did you arrive at your decision? What was the result?
+Give me an example of an important goal which you have set and tell me how you reached it. What steps did you take? What obstacles did you encounter? How did you overcome the obstacles?
+Tell me about a goal that you set that you did not reach. What steps did you take? What obstacles did you encounter? How did it make you feel?
+Where do you see yourself in 5 years?
+Describe a project or idea (not necessarily your own) that was implemented primarily because of your efforts. What was your role? What was the outcome?
+Describe a situation in which you recognized a potential problem as an opportunity. What did you do? What was the result? What do you wish you had done differently?
+Tell me about a project you initiated. What did you do? Why? What was the outcome? Were you happy with the result?
+What was the best idea you came up with during your professional or college career? How did you apply it?
+Discuss a time when your integrity was challenged. How did you handle it?
+Tell me about a time when you experienced a loss for doing what is right. How did you react?
+Describe a situation where you found yourself dealing with someone who didn't like you. How did you handle it?
+Tell me about a time when you had to work on a team with someone you did not get along with. What happened?
+Describe a situation where you had a conflict with another individual, and how you dealt with it. What was the outcome? How did you feel about it?
+Tell me about a team project when you had to take the lead or take charge of the project? What did you do? How did you do it? What was the result?
+What is the toughest group that you have had to get cooperation from? What were the obstacles? How did you handle the situation? What were the reactions of the group members? What was the end result?
+Describe a situation that required you to do a number of things at the same time. How did you handle it? What was the result?
+How do you prioritize projects and tasks when scheduling your time? Give me some examples.
+How do you manage multiple competing deadlines or priorities?
+Tell me about a time when you worked with a classmate or colleague who was not doing their share of the work. How did you handle it?
+Describe a situation in which you had to arrive at a compromise or help others to compromise. What was your role? What steps did you take? What was the result?
+Tell me about a time when you had to work on a team that did not get along. What happened? What role did you take? What was the result?
+Give me an example of a time you were wrong, and how you handled it.
+Everyone makes mistakes. Tell me about a time when you submitted work that you finalized, and then later realized you made a mistake. How did you correct it?
+Do you prefer to work remotely or in person?
+Why do you want to work for this company? Why this role?
+Which of our company values resonates most with you? or What are your personal values?
+We're looking for someone with a bit more experience, so I'm not sure if we can move forward. (Respond with an abjection)
+
+#Technical
+Tell me about the most difficult technical challenge you’ve encountered and how you resolved it.
+What has been your biggest technical challenge to date?
+Can you break down an algorithm you used on a project?
+What tools have you used?
+Describe a project in which you improved something.
+How have you solved problems in a project you've done? Why did you chose this project? Why did you choose this model?
+If you could do one thing done differently on your project, what would it be?
+Tell me about a technical challenge you faced during the course of a project
+Tell me about a soft challenge you faced during the course of a project
+Tell me about a time when you fixed or improved a process or procedure
+In your opinion, what makes good code?
+When writing code, how do you keep your code readable?
+In team projects, how do you divide work amongst the group?
+What sparked your interest in software engineering or data science?
+What are your primary motivations for becoming a Data Scientist/Software Engineer?
+What aspects of the industry are you most interested in?
+What do you love about the work of coding?
+What are a few technologies that have you recently been exposed that you find fascinating? Why do you find them fascinating?,
+What have you been able to accomplish recently, using new technology?
+How do you keep up to date with the most recent technologies?
+What project management experience do you have?
+
+#Statistics
+What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
+What's a confidence interval? Explain how you might calculate one for a mean, using two very different methods.
+Explain, step-by-step, how you would perform a frequentist hypothesis test.
+Our last hypothesis test was underpowered. What's statistical power? If we were to try our test again, what could we do to increase our power?
+What's the difference between probability and statistics?
+What's a p value?
+Compare and contrast frequentist vs bayesian statistics.
+When would you use a median value as opposed to a mean value to measure central tendency?
+What is the probability that, in a normal distribution, a measurement occurs within 1 standard deviation of the mean? 2 standard deviations? 3?
+What significance level do you usually use for a hypothesis test? Can you think of occasions in which you might want to increase it? Decrease?
+What is your experience with A/B testing?
+What is the difference between a population and a sample?
+
+#Data Science
+Can you give an example of how you've validated your data in a past project?
+Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?
+What have you used as your development environment? In your opinion when should scripts and jupyter notebooks be used?
+What data structures do you find useful in Python 3? Can you give examples when you might use each one?
+In your Python code, when do you choose to us a functional vs. object oriented approach? What are the functional and object-oriented paradigms?
+How do you define Big Data? What do you think makes it difficult to work with? Can you give an example of how you have worked with Big Data in the past?
+Compare and contrast SQL and noSQL databases. What is one major organizational difference betweeen the two? What data do you consider ideal for each? How have you used each type of database?
+Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?
+Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? And how does Spark work with and return results on distributed data?
+What is the largest dataset you have ever worked with?
+Give an example of when you've applied linear regression in the past where interpretability of the coefficients was a priority. What did you do to ensure that you had reliable coefficients?
+What is the difference between linear and logistic regression, and how do you interpret the coefficients for each type of model?
+Explain how regularization helps prevent overfitting in a linear/logistic regression. What are the different types of regularization, and how is the cost function different for each type?
+In logistic regression, maximum likelihood estimation is used to determine the feature coefficients. Can you explain, at a high level, how MLE works? Feel free to make this specific to a binary classifier.
+What metrics might you use to describe how well your linear regression fits the data. What are the pro and cons of each metric?
+Imagine you’re in a presentation with a client. How would you explain the concept of linear regression to them? 
+What is the bias/variance trade-off in supervised machine learning? What process do you follow to ensure your model generalizes well to unseen data?
+Explain how the decision tree (classification) algorithm works.
+How does a random forest differ from a single decision tree? Why are its predictions more generalizable?
+What is an ensemble method? What ensemble models do you know? How does each achieve a low-bias, low-variance prediction?
+You're working on a classification model and getting poor accuracy on your test set. What next steps would you consider?
+Describe a text processing project you've completed. How did you featurize the data?
+Given a dataset with 1000s of features, what can you do to reduce its dimensionality?
+What's the difference between hard and soft clustering. What models might you try in each case?
+How would you explain a latent topic to a layperson?
+How do you evaluate the performance of an unsupervised model?
+How is string interpolation performed?
+What is the difference between “is” and “==”?
+Does python call by reference or call by value?
+What is your favorite library in Python?
+How would you round a number to 3 decimal places?
+What is the difference between dictionaries and JSON?
+How to combine two lists into a list of tuples?
+How can you sort a dictionary by key, alphabetically?
+Why would you use enumerate() when iterating on a sequence?
+Return a list of keys from a dictionary.
+Do you want to mentor other data scientists?
+What are the advantages of AWS over other cloud services?
+What Database Management Systems (DBMS) have you used?
+Can you provide an example of a time you used code to automate a process or procedure?
+How would you combine three different data sources into one?
+Can you explain a normal data transportation process?
+How would you explain what a data warehouse is in simple terms? Technical terms?
+Tell me about a time in which you had to communicate technical findings to a non-technical audience.
+
+#PROBES
+What steps did you take?
+What action did you take?
+What happened after that?
+What did you say?
+How did he/she react?
+How did you handle that?
+What was your reaction?
+How did you feel about that?
+What was the outcome/result?
+Were you happy with that outcome/result?
+What do you wish you had done differently?
+What did you learn from that?
+How did you resolve that?
+What was the outcome of that?
+Why did you decide to do that?
+What was your logic?
+What was your reasoning?
+Where were you when this happened?
+What time was it?
+Who else was involved? Tell me more about your interaction with that person.
+What was your role?
+What obstacles did you face?
+What were you thinking at that point?
+Lead me through your decision process.
+How did you prepare for that?
+What did you discover at the end? 
+Did this confirm your assumptions?
+What lesson or take-away do you now bring with you to problems that you face?

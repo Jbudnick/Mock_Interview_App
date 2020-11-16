@@ -66,8 +66,6 @@ def get_input():
         </footer>
         '''
 
-
-
 @APP.route('/interview', methods = ["GET","POST"])
 def interview():
     mode = flask.request.form['mode']

@@ -1,11 +1,9 @@
 import flask
-import sys
 import numpy as np
 import pandas as pd
 import random
 
-sys.path.append("..")
-from src import main
+import main
 
 APP = flask.Flask(__name__)
 @APP.route('/')
@@ -73,10 +71,9 @@ def interview():
     Interview_df = main.import_question_db()
     Interview_df = main.select_mode(Interview_df, mode_select= int(mode))
     question_list = []
-    first_question = np.random.choice(
-        Interview_df[Interview_df['Category'] == 'Introduction']['Question'].values)
-    probe_q = Interview_df[Interview_df['Category']
-                        == 'PROBES']['Question'].values
+    introQuestions_list = Interview_df[Interview_df['Category']
+                                       == 'Introduction']['Question'].values
+    first_question = np.random.choice(introQuestions_list)
     questions = Interview_df[(Interview_df['Category'] != 'PROBES') &
                             (Interview_df['Category'] != 'Introduction')]['Question'].values
     Interview_questions = [first_question]

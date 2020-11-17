@@ -24,3 +24,6 @@
     }
     </script><br><hr>
      </body>'''.format(Interview_questions)
+
+         #probe_q = Interview_df[Interview_df['Category']
+                        == 'PROBES']['Question'].values

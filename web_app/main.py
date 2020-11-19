@@ -12,9 +12,11 @@ def import_question_db():
         if line == '\n' or line =='\r':
             continue
         if line.startswith('#'):
-            current_category = line.decode('utf-8').replace('#', '').replace('\n', '').rstrip('\r')
+            current_category = line.decode(
+                'utf-8').replace('#', '').replace('\n', '').rstrip('\r')
         else:
-            Interview_df.loc[line_num] = [line.decode('utf-8').replace('\n', '').rstrip('\r'), current_category]
+            Interview_df.loc[line_num] = [line.decode(
+                'utf-8').replace('\n', '').rstrip('\r'), current_category]
             line_num += 1
         Interview_df = Interview_df[Interview_df['Question'] != '']
     return Interview_df

@@ -119,6 +119,10 @@ Do you prefer to work remotely or in person?
 Why do you want to work for this company? Why this role?
 Which of our company values resonates most with you? or What are your personal values?
 We're looking for someone with a bit more experience, so I'm not sure if we can move forward. (Respond with an abjection)
+In team projects, how do you divide work amongst the group?
+Describe your ideal work culture.
+What did you like about the work culture from your previous job? What didn't you like?
+Let's say you give your boss a time estimate for project completion, but then realize 3 weeks in that you are going to need much more time than you originally anticipated. What would you do?
 
 #Technical
 Tell me about the most difficult technical challenge you’ve encountered and how you resolved it.
@@ -133,7 +137,8 @@ Tell me about a soft challenge you faced during the course of a project
 Tell me about a time when you fixed or improved a process or procedure
 In your opinion, what makes good code?
 When writing code, how do you keep your code readable?
-In team projects, how do you divide work amongst the group?
+Which IDE do you prefer to use when coding?
+What are your go-to websites for coding help when you need it?
 What sparked your interest in software engineering or data science?
 What are your primary motivations for becoming a Data Scientist/Software Engineer?
 What aspects of the industry are you most interested in?
@@ -142,6 +147,10 @@ What are a few technologies that have you recently been exposed that you find fa
 What have you been able to accomplish recently, using new technology?
 How do you keep up to date with the most recent technologies?
 What project management experience do you have?
+Tell me about a time in which you had to communicate technical findings to a non-technical audience.
+Do you want to mentor other data scientists, software engineers, or other incoming hires?
+What has been your favorite project you've worked on? Why?
+Which project did you learn the most from?
 
 #Statistics
 What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
@@ -194,14 +203,16 @@ How to combine two lists into a list of tuples?
 How can you sort a dictionary by key, alphabetically?
 Why would you use enumerate() when iterating on a sequence?
 Return a list of keys from a dictionary.
-Do you want to mentor other data scientists?
 What are the advantages of AWS over other cloud services?
 What Database Management Systems (DBMS) have you used?
 Can you provide an example of a time you used code to automate a process or procedure?
 How would you combine three different data sources into one?
 Can you explain a normal data transportation process?
 How would you explain what a data warehouse is in simple terms? Technical terms?
-Tell me about a time in which you had to communicate technical findings to a non-technical audience.
+Imagine you have two datasets: One consisting of the population of each state, and another consisting of the percentage of people under age 18 per state. How would you combine these two datasets to give a dataset with columns of the population under age 18 and over 18 per state? Describe using Python, R, or SQL.
+We have a database consisting of inventory in various different warehouses. Columns are warehouse ID, item name, color, and size. What would you enter as a SQL query to get the number of black tables in warehouse id #586?
+Do you know R? If not, would you be willing to learn it? When do you think R would have advantages over Python? Python over R?
+Which project of yours surprised you the most with the results you obtained?
 
 #PROBES
 What steps did you take?

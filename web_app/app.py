@@ -26,5 +26,11 @@ def interview():
     Interview_questions.extend(random.sample(set(questions), num_questions - 1))
     return flask.render_template("index.html", len = len(Interview_questions), Interview_questions = Interview_questions)
 
+@APP.route('/showdf', methods = ["GET", "POST"])
+def showdf():
+    Interview_df = main.import_question_db()
+    pd.set_option('display.max_colwidth', -1)
+    return Interview_df.to_html()
+
 if __name__ == '__main__':
-    APP.run(host = '0.0.0.0', port = 8080, debug = True)
+    APP.run(host = '0.0.0.0', port = 80, debug = True)

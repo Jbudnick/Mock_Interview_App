@@ -24,9 +24,17 @@
     footer {
         padding: 5%;
     }
+    hr {
+        width: 50%;
+        text-align: center;
+    }
+    .wholedf {
+        font-size: 16px;
+    }
 </style>
 <header><img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px"></header>
 <h1>Mock Interview Question Generator</h1>
+<div>
 <form action="/interview" method='POST'>
     <label for="mode">Choose Interview Mode:</label><br>
     <select name="mode" id="mode">
@@ -44,16 +52,22 @@
         <option value="20">20</option>
     </select>
     <br><br>
-    <input type="submit" value="Start Mock Interview"><br>
+    <input type="submit" value="Start Mock Interview"><br><br>
 </form>
-<br><br><br><br><br><br>
+</div>
+<hr><br><br>
+<form action="/showdf" method='POST'>
+    <input type="submit" class ="wholedf" value="See Question Database">
+    </form>
+</form>
+<br>
 <footer>Created by Jacob Budnick<br>
     Connect with me:<br>
     <a href="https://www.linkedin.com/in/jacobbudnick/">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedInJbudnick"
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn Jbudnick"
             style="width:30px;"></a>&nbsp;
     <a href="https://github.com/Jbudnick/">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.3/icons/github.svg" alt="GithubJbudnick"
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.3/icons/github.svg" alt="Github Jbudnick"
             style="width:30px;"></a>&nbsp;
     <a href="mailto:Jbudnick5@gmail.com">
         <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.5.0/icons/gmail.svg" alt="Jbudnick5@gmail.com"

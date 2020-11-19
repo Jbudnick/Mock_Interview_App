@@ -1,7 +1,5 @@
 # Mock_Interview_App
 
-Plans
+[Mock Interview App](http://ec2-18-205-23-22.compute-1.amazonaws.com/)
 
-Get interview questions compiled into notepad, randomize and select
-
-Load into a flask app and AWS Instance
+This app uses a interview question dataset to generate random questions to help prepare for interviews.

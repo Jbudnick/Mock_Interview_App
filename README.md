@@ -1,6 +1,14 @@
 # Mock_Interview_App
+
 <img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px;text-align: center:">
 
-[Mock Interview App](http://ec2-18-205-23-22.compute-1.amazonaws.com/)
+[Click here to go to Mock Interview App](http://ec2-18-205-23-22.compute-1.amazonaws.com/)
 
-This app uses a interview question dataset to generate random questions to help prepare for interviews.
+This application uses a interview question dataset to generate random questions to help viewers prepare for interviews.
+
+Ideas for improvement in future releases:
+- Add navigation bar at top of page for linking to github page
+- Add software engineering specific question and interview mode
+- Implement probes/follow up questions
+- Change dataset source to AWS S3 bucket for easier updating
+- Email me at Jbudnick5@gmail.com for further suggestions!

@@ -1,84 +1,87 @@
-<style>
-    h1 {
-        font-size: 35px;
-        text-align: center;
-    }
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {
+            font-size: 35px;
+            text-align: center;
+        }
 
-    header {
-        text-align: center;
-    }
+        header {
+            text-align: center;
+        }
 
-    form {
-        font-size: 20px;
-        text-align: center;
-    }
+        form {
+            font-size: 20px;
+            text-align: center;
+        }
 
-    select {
-        font-size: 15px;
-    }
+        select {
+            font-size: 15px;
+        }
 
-    input {
-        font-size: 18px;
-    }
+        input {
+            font-size: 18px;
+        }
 
-    footer {
-        padding: 5%;
-    }
-    hr {
-        width: 50%;
-        text-align: center;
-    }
-    .wholedf {
-        font-size: 16px;
-    }
-</style>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image"
-        content="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" />
-    <meta property="og:url" content="http://ec2-18-205-23-22.compute-1.amazonaws.com/" />
-    <meta property="og:title" content="Mock Interview Generator" />
-    <meta property="og:description"
-        content="Interview" />
-</head>
-<header><img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px"></header>
-<h1>Mock Interview Question Generator</h1>
-<div>
-<form action="/interview" method='POST'>
-    <label for="mode">Choose Interview Mode:</label><br>
-    <select name="mode" id="mode">
-        <option value="1">Behavioral and Data Science</option>
-        <option value="2">Behavioral Only</option>
-        <option value="3">Behavioral and Tech (No Data Science)</option>
-        <option value="4">Data Science Only (No Behavioral)</option>
-    </select>
-    <br><br>
-    <label for="num_questions">Select Number of Questions</label><br>
-    <select name="num_questions" id="num_questions">
-        <option value="5">5</option>
-        <option value="10">10</option>
-        <option value="15">15</option>
-        <option value="20">20</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Start Mock Interview"><br><br>
-</form>
-</div>
-<hr><br><br>
-<form action="/showdf" method='POST'>
-    <input type="submit" class ="wholedf" value="See Question Database">
+        footer {
+            padding: 5%;
+        }
+        hr {
+            width: 50%;
+            text-align: center;
+        }
+        .wholedf {
+            font-size: 16px;
+        }
+    </style>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image"
+            content="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" />
+        <meta property="og:url" content="http://ec2-18-205-23-22.compute-1.amazonaws.com/" />
+        <meta property="og:title" content="Mock Interview Generator" />
+        <meta property="og:description"
+            content="Interview" />
+    </head>
+    <header><img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px"></header>
+    <h1>Mock Interview Question Generator</h1>
+    <div>
+    <form action="/interview" method='POST'>
+        <label for="mode">Choose Interview Mode:</label><br>
+        <select name="mode" id="mode">
+            <option value="1">Behavioral and Data Science</option>
+            <option value="2">Behavioral Only</option>
+            <option value="3">Behavioral and Tech (No Data Science)</option>
+            <option value="4">Data Science Only (No Behavioral)</option>
+        </select>
+        <br><br>
+        <label for="num_questions">Select Number of Questions</label><br>
+        <select name="num_questions" id="num_questions">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Start Mock Interview"><br><br>
     </form>
-</form>
-<br>
-<footer>Created by Jacob Budnick<br>
-    Connect with me:<br>
-    <a href="https://www.linkedin.com/in/jacobbudnick/">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn Jbudnick"
-            style="width:30px;"></a>&nbsp;
-    <a href="https://github.com/Jbudnick/">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.3/icons/github.svg" alt="Github Jbudnick"
-            style="width:30px;"></a>&nbsp;
-    <a href="mailto:Jbudnick5@gmail.com">
-        <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.5.0/icons/gmail.svg" alt="Jbudnick5@gmail.com"
-            style="width:30px;"></a>
-</footer>
+    </div>
+    <hr><br><br>
+    <form action="/showdf" method='POST'>
+        <input type="submit" class ="wholedf" value="See Question Database">
+        </form>
+    </form>
+    <br>
+    <footer>Created by Jacob Budnick<br>
+        Connect with me:<br>
+        <a href="https://www.linkedin.com/in/jacobbudnick/">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn Jbudnick"
+                style="width:30px;"></a>&nbsp;
+        <a href="https://github.com/Jbudnick/">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.12.3/icons/github.svg" alt="Github Jbudnick"
+                style="width:30px;"></a>&nbsp;
+        <a href="mailto:Jbudnick5@gmail.com">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.5.0/icons/gmail.svg" alt="Jbudnick5@gmail.com"
+                style="width:30px;"></a>
+    </footer>
+</html>

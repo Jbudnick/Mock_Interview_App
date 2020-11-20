@@ -1,7 +1,7 @@
 #Introduction
 Tell me about yourself.
-Can you please walk me through your resume?
-Can you please tell me about your professional experience in 2-3 minutes?
+Please walk me through your resume.
+Please tell me about your professional experience in 2-3 minutes.
 
 #Behavioral
 What do you consider your biggest professional accomplishment to-date?
@@ -20,13 +20,13 @@ How would you describe yourself?
 What are your long range and short range goals and objectives?
 What do you see yourself doing five years from now? 
 Where do you see yourself ten years from now?
-What are your long range career objective?
+What are your long range career objectives?
 How do you plan to achieve your career goals?
 What are the most important rewards you expect in your career?
 How well do you work with people? Do you prefer working alone or in teams?
 How would you evaluate your ability to deal with conflict?
 Have you ever had difficulty with a supervisor? How did you resolve the conflict?
-What's more important to you -- the work itself or how much you're paid for doing it
+What's more important to you - the work itself or how much you're paid for doing it?
 What do you consider to be your greatest strength and weakness?
 How would a good friend describe you?
 Describe the best job you've ever had.
@@ -72,7 +72,7 @@ What have you learned from your mistakes?
 What have you accomplished that shows your initiative and willingness to work?
 What motivates you?
 What motivating mindset has helped propel you forward when overcoming challenges?
-Why are you leaving your current job? / Why did you leave your last job?
+Why are you leaving your current job, or why did you leave your last job?
 What are your 3 greatest strengths/weaknesses?
 Give me an example of a time you took initiative, where you went above and beyond what was expected of you.
 Tell me about a timed when you had to manage several tasks at the same time that will convince me that you are capable of multitasking.
@@ -87,7 +87,7 @@ Tell me about a situation where you had to solve a difficult problem. What did y
 What steps do you follow to study a problem before making a decision? Why?
 Have you ever had to sell an idea to your classmates or co-workers? How did you do it? Did they accept your idea?
 Give me an example of a time when you were able to successfully communicate with another person even when that individual may not have personally liked you (or vice versa). How did you handle the situation? What obstacles or difficulties did you face? How did you deal with them?
-What, in your opinion, are the key ingredients in guiding and maintinating successful relationships?
+What, in your opinion, are the key ingredients in guiding and maintainating successful relationships?
 Tell me about a problem that you've solved in a unique or unusual way. What was the outcome? Were you happy or satisfied with it?
 Give me an example of when someone brought you a new idea that was odd or unusual. What did you do?
 Tell me about a time when you had to make a decision without all the information you needed. How did you handle it? Why? Were you happy with the outcome?
@@ -122,7 +122,8 @@ We're looking for someone with a bit more experience, so I'm not sure if we can 
 In team projects, how do you divide work amongst the group?
 Describe your ideal work culture.
 What did you like about the work culture from your previous job? What didn't you like?
-Let's say you give your boss a time estimate for project completion, but then realize 3 weeks in that you are going to need much more time than you originally anticipated. What would you do?
+Let's say you give your boss a time estimate for project completion, but then realize 3 weeks in that you are going to need much more time than you originally told your boss. What would you do?
+Tell me about a time in which you failed and what you learned from it.
 
 #Technical
 Tell me about the most difficult technical challenge you’ve encountered and how you resolved it.
@@ -141,7 +142,7 @@ Which IDE do you prefer to use when coding?
 What are your go-to websites for coding help when you need it?
 What sparked your interest in software engineering or data science?
 What are your primary motivations for becoming a Data Scientist/Software Engineer?
-What aspects of the industry are you most interested in?
+What aspects of the tech industry are you most interested in?
 What do you love about the work of coding?
 What are a few technologies that have you recently been exposed that you find fascinating? Why do you find them fascinating?,
 What have you been able to accomplish recently, using new technology?
@@ -151,6 +152,10 @@ Tell me about a time in which you had to communicate technical findings to a non
 Do you want to mentor other data scientists, software engineers, or other incoming hires?
 What has been your favorite project you've worked on? Why?
 Which project did you learn the most from?
+What technical projects are you currently working on right now? Why did you choose these projects?
+How many piano tuners are there in Chicago?
+Why are manholes round?
+How many street lights are there in London?
 
 #Statistics
 What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
@@ -161,7 +166,7 @@ What's the difference between probability and statistics?
 What's a p value?
 Compare and contrast frequentist vs bayesian statistics.
 When would you use a median value as opposed to a mean value to measure central tendency?
-What is the probability that, in a normal distribution, a measurement occurs within 1 standard deviation of the mean? 2 standard deviations? 3?
+What is the probability that, in a normal distribution, an observed value occurs within 1 standard deviation of the mean? 2 standard deviations? 3?
 What significance level do you usually use for a hypothesis test? Can you think of occasions in which you might want to increase it? Decrease?
 What is your experience with A/B testing?
 What is the difference between a population and a sample?
@@ -169,13 +174,13 @@ What is the difference between a population and a sample?
 #Data Science
 Can you give an example of how you've validated your data in a past project?
 Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?
-What have you used as your development environment? In your opinion when should scripts and jupyter notebooks be used?
+What have you used as your development environment? In your opinion when should scripts and Jupyter notebooks be used?
 What data structures do you find useful in Python 3? Can you give examples when you might use each one?
 In your Python code, when do you choose to us a functional vs. object oriented approach? What are the functional and object-oriented paradigms?
 How do you define Big Data? What do you think makes it difficult to work with? Can you give an example of how you have worked with Big Data in the past?
-Compare and contrast SQL and noSQL databases. What is one major organizational difference betweeen the two? What data do you consider ideal for each? How have you used each type of database?
+Compare and contrast SQL and noSQL databases. What is one major organizational difference between the two? What data do you consider ideal for each? How have you used each type of database?
 Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?
-Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? And how does Spark work with and return results on distributed data?
+Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? How does Spark work with and return results on distributed data?
 What is the largest dataset you have ever worked with?
 Give an example of when you've applied linear regression in the past where interpretability of the coefficients was a priority. What did you do to ensure that you had reliable coefficients?
 What is the difference between linear and logistic regression, and how do you interpret the coefficients for each type of model?

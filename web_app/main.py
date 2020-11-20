@@ -2,21 +2,36 @@ import numpy as np
 import pandas as pd
 import random
 from os import system
+import urllib.request
+
+'''
+#Updates 11/19/2020:
+Changed source of questions to AWS S3 bucket for easier updating and modifying question database
+'''
 
 def import_question_db():
     line_num = 0
     current_category = ''
     Interview_df = pd.DataFrame(columns=['Question', 'Category'])
-    fhand = open('questions.csv')
+
+    try:
+        url = 'https://mock-interview-app-bucket.s3-us-west-1.amazonaws.com/questions.csv'
+        fhand = urllib.request.urlopen(url)
+        print('Connected to AWS S3 Bucket for questions')
+    except:
+        print('Could not connect to AWS S3 bucket...using local file')
+        fhand = open('questions.csv')
     for line in fhand:
+        try: 
+            line = line.decode('utf-8')
+        except:
+            pass
         if line == '\n' or line =='\r':
             continue
         if line.startswith('#'):
-            current_category = line.decode(
-                'utf-8').replace('#', '').replace('\n', '').rstrip('\r')
+            current_category = line.replace('#', '').replace('\n', '').rstrip('\r')
         else:
-            Interview_df.loc[line_num] = [line.decode(
-                'utf-8').replace('\n', '').rstrip('\r'), current_category]
+            Interview_df.loc[line_num] = [line.replace('\n', '').rstrip('\r'), current_category]
             line_num += 1
         Interview_df = Interview_df[Interview_df['Question'] != '']
     return Interview_df

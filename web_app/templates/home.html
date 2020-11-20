@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" />
+        <meta property="og:url" content="http://ec2-18-205-23-22.compute-1.amazonaws.com/" />
+        <meta property="og:title" content="Mock Interview Generator" />
+        <meta property="og:description" content="Interview" />
+
+        <link href="static/hello.css" rel="stylesheet">
+    </head>
     <style>
         h1 {
             font-size: 35px;
@@ -24,7 +35,7 @@
         }
 
         footer {
-            padding: 5%;
+            padding: 2% 5%;
         }
         hr {
             width: 50%;
@@ -33,17 +44,29 @@
         .wholedf {
             font-size: 16px;
         }
+
+        .img-header {
+            max-height: 200px;
+            margin:auto;
+            display: grid;
+        }
+
+        nav {
+            text-align: left;
+            padding: 1% 5%;
+        }
+        
     </style>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:image"
-            content="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" />
-        <meta property="og:url" content="http://ec2-18-205-23-22.compute-1.amazonaws.com/" />
-        <meta property="og:title" content="Mock Interview Generator" />
-        <meta property="og:description"
-            content="Interview" />
-    </head>
-    <header><img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px"></header>
+
+    <header>
+        <nav>
+            <button onclick="window.location.href='https://github.com/Jbudnick/Mock_Interview_App';">
+                See Github Page
+            </button>
+        </nav>
+        <img class="img-header" src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png">
+    </header>
+    <body>
     <h1>Mock Interview Question Generator</h1>
     <div>
     <form action="/interview" method='POST'>
@@ -66,12 +89,12 @@
         <input type="submit" value="Start Mock Interview"><br><br>
     </form>
     </div>
-    <hr><br><br>
+    <hr><br>
     <form action="/showdf" method='POST'>
         <input type="submit" class ="wholedf" value="See Question Database">
-        </form>
+        </form><br><br><br>
     </form>
-    <br>
+    </body>
     <footer>Created by Jacob Budnick<br>
         Connect with me:<br>
         <a href="https://www.linkedin.com/in/jacobbudnick/">

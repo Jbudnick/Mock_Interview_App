@@ -204,7 +204,7 @@ Does python call by reference or call by value?
 What is your favorite library in Python?
 How would you round a number to 3 decimal places?
 What is the difference between dictionaries and JSON?
-How to combine two lists into a list of tuples?
+How would you combine two lists into a list of tuples?
 How can you sort a dictionary by key, alphabetically?
 Why would you use enumerate() when iterating on a sequence?
 Return a list of keys from a dictionary.

@@ -29,7 +29,7 @@ def interview():
 @APP.route('/showdf', methods = ["GET", "POST"])
 def showdf():
     Interview_df = main.import_question_db()
-    pd.set_option('display.max_colwidth', -1)
+    pd.set_option('display.max_colwidth', None)
     return Interview_df.to_html()
 
 if __name__ == '__main__':

@@ -1,0 +1,60 @@
+,Question
+0,What's your favorite statistical distribution? Why? Explain how you've used it in your data science work.
+1,"What's a confidence interval? Explain how you might calculate one for a mean, using two very different methods."
+2,"Explain, step-by-step, how you would perform a frequentist hypothesis test."
+3,"Our last hypothesis test was underpowered. What's statistical power? If we were to try our test again, what could we do to increase our power?"
+4,What's the difference between probability and statistics?
+5,What's a p value?
+6,Compare and contrast frequentist vs bayesian statistics.
+7,When would you use a median value as opposed to a mean value to measure central tendency?
+8,"What is the probability that, in a normal distribution, an observed value occurs within 1 standard deviation of the mean? 2 standard deviations? 3?"
+9,What significance level do you usually use for a hypothesis test? Can you think of occasions in which you might want to increase it? Decrease?
+10,What is your experience with A/B testing?
+11,What is the difference between a population and a sample?
+12,Can you give an example of how you've validated your data in a past project?
+13,Explain how you have used version control in your data science projects. Have you been able to collaborate on developing code with a partner? How about a group? How did you do it? What workflow did you use?
+14,What have you used as your development environment? In your opinion when should scripts and Jupyter notebooks be used?
+15,What data structures do you find useful in Python 3? Can you give examples when you might use each one?
+16,"In your Python code, when do you choose to us a functional vs. object oriented approach? What are the functional and object-oriented paradigms?"
+17,How do you define Big Data? What do you think makes it difficult to work with? Can you give an example of how you have worked with Big Data in the past?
+18,Compare and contrast SQL and noSQL databases. What is one major organizational difference between the two? What data do you consider ideal for each? How have you used each type of database?
+19,Explain the concept of MapReduce in simple to understand language. How does MapReduce help analyze data that's distributed?
+20,"Our company presently uses MapReduce, but we've heard that Spark is better. Why is that? How does Spark work with and return results on distributed data?"
+21,What is the largest dataset you have ever worked with?
+22,Give an example of when you've applied linear regression in the past where interpretability of the coefficients was a priority. What did you do to ensure that you had reliable coefficients?
+23,"What is the difference between linear and logistic regression, and how do you interpret the coefficients for each type of model?"
+24,"Explain how regularization helps prevent overfitting in a linear/logistic regression. What are the different types of regularization, and how is the cost function different for each type?"
+25,"In logistic regression, maximum likelihood estimation is used to determine the feature coefficients. Can you explain, at a high level, how MLE works? Feel free to make this specific to a binary classifier."
+26,What metrics might you use to describe how well your linear regression fits the data. What are the pro and cons of each metric?
+27,Imagine you’re in a presentation with a client. How would you explain the concept of linear regression to them? 
+28,What is the bias/variance trade-off in supervised machine learning? What process do you follow to ensure your model generalizes well to unseen data?
+29,Explain how the decision tree (classification) algorithm works.
+30,How does a random forest differ from a single decision tree? Why are its predictions more generalizable?
+31,"What is an ensemble method? What ensemble models do you know? How does each achieve a low-bias, low-variance prediction?"
+32,You're working on a classification model and getting poor accuracy on your test set. What next steps would you consider?
+33,Describe a text processing project you've completed. How did you featurize the data?
+34,"Given a dataset with 1000s of features, what can you do to reduce its dimensionality?"
+35,What's the difference between hard and soft clustering. What models might you try in each case?
+36,How would you explain a latent topic to a layperson?
+37,How do you evaluate the performance of an unsupervised model?
+38,How is string interpolation performed?
+39,What is the difference between “is” and “==”?
+40,Does python call by reference or call by value?
+41,What is your favorite library in Python?
+42,How would you round a number to 3 decimal places?
+43,What is the difference between dictionaries and JSON?
+44,How would you combine two lists into a list of tuples?
+45,"How can you sort a dictionary by key, alphabetically?"
+46,Why would you use enumerate() when iterating on a sequence?
+47,Return a list of keys from a dictionary.
+48,What are the advantages of Amazon Web Services (AWS) over other cloud services?
+49,How much have you used Amazon Web Services (AWS)? What do you know about the services it offers?
+50,What Database Management Systems (DBMS) have you used?
+51,Can you provide an example of a time you used code to automate a process or procedure?
+52,How would you combine three different data sources into one?
+53,Can you explain a normal data transportation process?
+54,How would you explain what a data warehouse is in simple terms? Technical terms?
+55,"Imagine you have two datasets: One consisting of the population of each state, and another consisting of the percentage of people under age 18 per state. How would you combine these two datasets to give a dataset with columns of the population under age 18 and over 18 per state? Describe using Python, R, or SQL."
+56,"We have a database consisting of inventory in various different warehouses. Columns are warehouse ID, item name, color, and size. What would you enter as a SQL query to get the number of black tables in warehouse id #586?"
+57,"Do you know R? If not, would you be willing to learn it? When do you think R would have advantages over Python? Python over R?"
+58,Which project of yours surprised you the most with the results you obtained?

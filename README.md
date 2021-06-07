@@ -2,11 +2,11 @@
 
 <img src="https://blog.gurock.com/wp-content/uploads/2015/08/interview.png" style="height:200px;text-align: center:">
 
-[Click here to go to Mock Interview Application](http://ec2-174-129-129-48.compute-1.amazonaws.com)
+Unfortunately, due to my AWS free tier ending and the cost of running an AWS EC2 instance, the AWS web app for this project has been deactivated indefinitely.
 
-This application uses a interview question dataset to generate random questions to help viewers prepare for interviews.
+However, the python version of the mock interview app still works. To use it, please download the [Interview App](https://github.com/Jbudnick/Mock_Interview_App/archive/refs/heads/non-aws.zip) file, open it, and run "Interview_App.py"
 
-Ideas for improvement in future releases:
-- Add software engineering specific question and interview mode
-- Implement probes/follow up questions
-- Email me at Jbudnick5@gmail.com for further suggestions!
+
+[Or Download Question Dataset](https://mock-interview-app-bucket.s3-us-west-1.amazonaws.com/questions.csv)
+
+Please email me at Jbudnick5@gmail.com if you have any issues.

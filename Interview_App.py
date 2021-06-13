@@ -7,6 +7,9 @@ import urllib.request
 '''
 #Updates 11/19/2020:
 Changed source of questions to AWS S3 bucket for easier updating and modifying question database
+
+Updates 6/12/2021
+Updated question source to Github csv rather than AWS S3
 '''
 
 def import_question_db():
@@ -15,11 +18,11 @@ def import_question_db():
     Interview_df = pd.DataFrame(columns=['Question', 'Category'])
 
     try:
-        url = 'https://mock-interview-app-bucket.s3-us-west-1.amazonaws.com/questions.csv'
+        url = 'https://raw.githubusercontent.com/Jbudnick/Mock_Interview_App/non-aws/questions.csv'
         fhand = urllib.request.urlopen(url)
-        print('Connected to AWS S3 Bucket for questions')
+        print('Connected to Github dataset for questions')
     except:
-        print('Could not connect to AWS S3 bucket...using local file')
+        print('Could not connect to Github dataset...using local file')
         fhand = open('questions.csv')
     for line in fhand:
         try: 

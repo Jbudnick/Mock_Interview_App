@@ -67,9 +67,9 @@
     <body>
     <h1>Mock Interview Question Generator</h1>
     <div>
-    <form action="/interview" method='POST'>
+    <form action="InterviewPage.html" method='GET'>
         <label for="mode">Choose Interview Mode:</label><br>
-        <select name="mode" id="mode">
+        <select name="mode" id="mode" name = "mode">
             <option value="1">Behavioral and Data Science</option>
             <option value="2">Behavioral Only</option>
             <option value="3">Behavioral and Tech (No Data Science)</option>
@@ -79,11 +79,12 @@
         <label for="num_questions">Select Number of Questions</label><br>
         <select name="num_questions" id="num_questions">
             <option value="5">5</option>
-            <option value="10">10</option>
+            <option value="10" selected>10</option>
             <option value="15">15</option>
             <option value="20">20</option>
         </select>
         <br><br>
+        
         <input type="submit" value="Start Mock Interview"><br><br>
     </form>
     </div>
@@ -94,6 +95,7 @@
         </button>
     </header>
         <br><br><br>
+        
     </form>
     </body>
     <footer>Created by Jacob Budnick<br>

@@ -19,8 +19,35 @@
 <body>
 <ol>
 <!-- For loop logic of jinja template -->
-{%for i in range(0, len)%}
+    <p id="foo"></p>
+    <script>
+        var a = window.location.search.split("&");
+        var mode = document.innerHTML = a[0].replace("?mode=", "");
+        var numQ = document.innerHTML = a[1].replace("num_questions=", "");
+        document.getElementById("foo").innerHTML = mode;
+        document.getElementById("demo").innerHTML = numQ;
+        //document.getElementById("demo").innerHTML =8;
+        //var a = queryString.split("&");
+        //var value1 = a[0]
+        //var value2 = a[1]
+        //document.getElementById("demo").innerHTML = 5 + 6;
 
+        //document.getElementById("write").innerHTML = window.location.search
+    </script>
+
+{%for i in range(0, len)%}
+<p id="Questions"></p>
+
+<script>
+    var test = ['1', '5', '6', '11'];
+    var text = ""
+    var i
+    for (i=0; i< numQ; i++) {
+        text += i +"<br>";
+    }
+    document.getElementById("Questions").innerHTML = text;
+
+</script>
 <li>
     <button onclick="myFunction(index = {{i}})">Toggle Question {{i + 1}}</button><br>
     <div id="myQuestion_{{i}}" style = "display:none" class = "Question">

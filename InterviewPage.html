@@ -677,6 +677,7 @@
     const question_i = randomNumbersWithoutReplacement(numQ-1, 3, wholeQList.length-1)
     var introQ = randomNumbersWithoutReplacement(1, 0, 2)[0]
     question_i.unshift(introQ)
+    document.getElementById("Questions").innerHTML = question_i
     var i;
     for (i=0; i<= numQ-1; i++) {
         text += '<button onclick="showQuestion(i='+i+')">Toggle Question ' + (i+1) + '</button> <div id="Question'+i+'" style="display:none" class="Question">'+ wholeQList[question_i[i]] +'</div><br><br>';

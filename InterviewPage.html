@@ -644,24 +644,28 @@
 <p id="Random_Selection"></p>
 
 <script>
-    var bucket = []
-    var result = []
-    function setUpBucket(from, to) {
-    	for (var i = from; i<= to-1; i++) {
-        	bucket.push(i)
-            }
-        return bucket
-        }
-    
-    // select n integers from the range [from, to] (inclusive at both sides)
+
+    // select n integers from the range [from, to] (inclusive at both sides),
+    // don't use this approach for large values of n
+    // taking random values from the randomSource as needed
     function randomNumbersWithoutReplacement(n, from, to) {
-    	bucket = setUpBucket(from, to)
-        for (var j = 0; j<n; j++) {
-			var randomIndex = Math.floor(Math.random()*bucket.length);
-            result.push(bucket[randomIndex])
-            bucket.splice(randomIndex, 1);
+        const result = [];
+        for (let i = 0; i < n; ++i) {
+            // i values have already been taken
+            // the +1 makes it inclusive
+            const rangeWidth = to - from - i + 1
+
+            let value = Math.floor(rangeWidth * Math.random()) + from
+
+            // correct the value compared to the already sampled integers
+            for (let j = 0; j < result.length; ++j) {
+                if (result[j] <= value) {
+                    value++
+                }
+            }
+
+            result.push(value)
         }
-        
         return result
     }
 </script>

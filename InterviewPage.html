@@ -660,7 +660,7 @@
     function randomNumbersWithoutReplacement(n, from, to) {
     	bucket = setUpBucket(from, to)
         for (var j = 0; j<n; j++) {
-			var randomIndex = Math.floor(Math.random()*bucket.length);
+	    var randomIndex = Math.floor(Math.random()*bucket.length);
             result.push(bucket[randomIndex])
             bucket.splice(randomIndex, 1);
         }
@@ -679,7 +679,7 @@
     question_i.unshift(introQ)
     var i;
     for (i=0; i<= numQ-1; i++) {
-        text += '<button onclick="showQuestion(i='+i+')">Toggle Question ' + (i+1) + '</button> <div id="Question'+i+'" style="display:none" class="Question">'+ wholeQList[question_i[i]] +'</div><br><br>';
+        text += '<button onclick="showQuestion(i='+i+')">Toggle Question ' + (i+1) + '</button> <div id="Question'+i+'" style="display:none" class="Question">'+ introQ + wholeQList[question_i[i]] +'</div><br><br>';
     }
     document.getElementById("Questions").innerHTML = text;
 

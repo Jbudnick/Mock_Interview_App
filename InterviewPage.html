@@ -679,7 +679,7 @@
     question_i.unshift(introQ)
     var i;
     for (i=0; i<= numQ-1; i++) {
-        text += '<button onclick="showQuestion(i='+i+')">Toggle Question ' + (i+1) + '</button> <div id="Question'+i+'" style="display:none" class="Question">'+ question_i + wholeQList[question_i[i]] +'</div><br><br>';
+        text += '<button onclick="showQuestion(i='+i+')">Toggle Question ' + (i+1) + '</button> <div id="Question'+i+'" style="display:none" class="Question">'+ wholeQList[question_i[i]] +'</div><br><br>';
     }
     document.getElementById("Questions").innerHTML = text;
 
